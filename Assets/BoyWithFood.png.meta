@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: dbbad334623aeba43bfa995737a4188d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5295090332313998262
+    second: BoyWithFood_0
+  - first:
+      213: -4793559961855922471
+    second: BoyWithFood_1
+  - first:
+      213: -3035418198754923587
+    second: BoyWithFood_2
+  - first:
+      213: -5020953839740691679
+    second: BoyWithFood_3
+  - first:
+      213: 47285138731552297
+    second: BoyWithFood_4
+  - first:
+      213: 2021179759515328918
+    second: BoyWithFood_5
+  - first:
+      213: 8477916028421163425
+    second: BoyWithFood_6
+  - first:
+      213: -3224121731521745518
+    second: BoyWithFood_7
+  - first:
+      213: -5963525326522426750
+    second: BoyWithFood_8
+  - first:
+      213: 8600620128647168748
+    second: BoyWithFood_9
+  - first:
+      213: 4788840517344875541
+    second: BoyWithFood_10
+  - first:
+      213: -6908352345260884502
+    second: BoyWithFood_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BoyWithFood_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 227
+        width: 78
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ca1d8b56f0486b0800000000000000
+      internalID: -5295090332313998262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_1
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 227
+        width: 76
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9deea00bc9ad97db0800000000000000
+      internalID: -4793559961855922471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_2
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 227
+        width: 76
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbe4760b3700e5d0800000000000000
+      internalID: -3035418198754923587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_3
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 227
+        width: 77
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b5f9cb51df15ab0800000000000000
+      internalID: -5020953839740691679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_4
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 227
+        width: 78
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ecf39459df7a000800000000000000
+      internalID: 47285138731552297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_5
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 227
+        width: 76
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691ee19584cac0c10800000000000000
+      internalID: 2021179759515328918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 62
+        width: 78
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a942adb5bb97a570800000000000000
+      internalID: 8477916028421163425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_7
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 62
+        width: 79
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d67080e5e9143d0800000000000000
+      internalID: -3224121731521745518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 62
+        width: 77
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ad597cf4d4d3da0800000000000000
+      internalID: -5963525326522426750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_9
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 62
+        width: 77
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2c610607a8b5770800000000000000
+      internalID: 8600620128647168748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_10
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 62
+        width: 77
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514d6520411657240800000000000000
+      internalID: 4788840517344875541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyWithFood_11
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 62
+        width: 79
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedfc7dd42a9020a0800000000000000
+      internalID: -6908352345260884502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 096d9d8367b00d248a3273a090706e85
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BoyWithFood_0: -5295090332313998262
+      BoyWithFood_1: -4793559961855922471
+      BoyWithFood_10: 4788840517344875541
+      BoyWithFood_11: -6908352345260884502
+      BoyWithFood_2: -3035418198754923587
+      BoyWithFood_3: -5020953839740691679
+      BoyWithFood_4: 47285138731552297
+      BoyWithFood_5: 2021179759515328918
+      BoyWithFood_6: 8477916028421163425
+      BoyWithFood_7: -3224121731521745518
+      BoyWithFood_8: -5963525326522426750
+      BoyWithFood_9: 8600620128647168748
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

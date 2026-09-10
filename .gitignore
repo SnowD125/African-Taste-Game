@@ -1,0 +1,71 @@
+﻿@"
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Ll]ogs/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Mm]emoryCaptures/
+UserSettings/
+
+# IDE / Visual Studio
+.vs/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Unity generated / crash files
+sysinfo.txt
+
+# Build outputs
+*.apk
+*.aab
+*.app
+*.exe
+*.zip
+
+# Android signing / certificates
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.mobileprovision
+
+# Secrets / credentials
+.env
+.env.*
+*.env
+credentials.json
+secrets.json
+secrets.*
+credentials.*
+*credentials*
+*secret*
+*password*
+
+# Unity Asset Store / temporary files
+*.unitypackage
+
+# Logs and backups
+*.log
+*.bak
+"@ | Set-Content -Encoding UTF8 .gitignore
+# Local / upgrade files
+.utmp/
+*.vsconfig
+UpgradeLog.htm

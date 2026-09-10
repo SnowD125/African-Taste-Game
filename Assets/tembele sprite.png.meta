@@ -1,0 +1,643 @@
+fileFormatVersion: 2
+guid: 37a54424e90e2624eabee97be183d532
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6164294573837874495
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_0
+  - first:
+      213: -3539433403331245423
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_1
+  - first:
+      213: 5806922964658850792
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_2
+  - first:
+      213: -5829502549811300925
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_3
+  - first:
+      213: -7801630066275942574
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_4
+  - first:
+      213: 3430641181698076903
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_5
+  - first:
+      213: 7797208826651913725
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_6
+  - first:
+      213: 2590827096265533535
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_7
+  - first:
+      213: 3747433053096174056
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_8
+  - first:
+      213: 8434054809001756645
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_9
+  - first:
+      213: -6406971620423593154
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_10
+  - first:
+      213: 3769704948167592447
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_11
+  - first:
+      213: 6981892720961569682
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_12
+  - first:
+      213: 2323328769455238952
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_13
+  - first:
+      213: -9180807813408228040
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_14
+  - first:
+      213: -4547364746846132174
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_15
+  - first:
+      213: 3886992833755135461
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_16
+  - first:
+      213: -8230412420321047076
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_17
+  - first:
+      213: -6625292766864776453
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_18
+  - first:
+      213: -3204222029796329330
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_19
+  - first:
+      213: 6808234359653503085
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_20
+  - first:
+      213: 7907687999181862564
+    second: file_00000000af98722fa51db84538a70687-removebg-preview_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tembele sprite_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 354
+        width: 228
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f9f77cccc8d39458bf5d56b2769486
+      internalID: -814881177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 354
+        width: 227
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733f6f5201645f34fa51f088d2ccd1df
+      internalID: 840699613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 309
+        width: 4
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5db3be057c68e443a94c0609181998c
+      internalID: 1909757524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 300
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ea575374a6a9245b197bef5a0b9e3c
+      internalID: 376004380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_4
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 298
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1944ea0e3e9d6e141b1adb061ec2ab6e
+      internalID: 1523801802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_5
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 312
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5327c73af604dab42a87bdecf7620683
+      internalID: -1077953941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 210
+        width: 227
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8ee9b47c344bd4087c6f65109a1851
+      internalID: -1443081424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_7
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 298
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdf1a0bcd703ef4aaa4ffd44b8a18a9
+      internalID: -1310906887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_8
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 298
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f697c847fe74a3447bdc1fcbd9cf021d
+      internalID: -1975030798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_9
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 210
+        width: 227
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd62fbabe13417459c812eb670aed83
+      internalID: 1343368532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_10
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4618ca15d97214fac3baf65d709cf2
+      internalID: 874458947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_11
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 301
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a52a1a5704aef46b8ebc717566719c
+      internalID: -44796130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_12
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 291
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58edb6b31a778b4b8b5a341894e81a7
+      internalID: -1149931382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_13
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 158
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6e9ed2fb22f534a9c2b84139b97baf
+      internalID: -764300636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_14
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 161
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa8f113c8de0294e87b74bb2d5ec136
+      internalID: -199506417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_15
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 148
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbfaf2db4c2cad4c9e449a42faf90f9
+      internalID: 1034185117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_16
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 153
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde1b38e8f72dc2468ea0add109fec2e
+      internalID: -1189190578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_17
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 147
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638df3b5e9d44f14e94bbc106698f9d3
+      internalID: -1517771200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_18
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 62
+        width: 228
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ebd90bd8e4b1b42be8eed7785307b2
+      internalID: -1065755259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tembele sprite_19
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 63
+        width: 228
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521606702448bf549aba9a29af5d4807
+      internalID: -1980348948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e239eb07699e9a24ab6ec7232d330a78
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tembele sprite_0: -814881177
+      tembele sprite_1: 840699613
+      tembele sprite_10: 874458947
+      tembele sprite_11: -44796130
+      tembele sprite_12: -1149931382
+      tembele sprite_13: -764300636
+      tembele sprite_14: -199506417
+      tembele sprite_15: 1034185117
+      tembele sprite_16: -1189190578
+      tembele sprite_17: -1517771200
+      tembele sprite_18: -1065755259
+      tembele sprite_19: -1980348948
+      tembele sprite_2: 1909757524
+      tembele sprite_3: 376004380
+      tembele sprite_4: 1523801802
+      tembele sprite_5: -1077953941
+      tembele sprite_6: -1443081424
+      tembele sprite_7: -1310906887
+      tembele sprite_8: -1975030798
+      tembele sprite_9: 1343368532
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
