@@ -135,6 +135,20 @@ public class Plate2 : MonoBehaviour
         isClickable = false;
 
         // =====================================================
+        // LATCH WHAT WAS ACTUALLY SERVED
+        //
+        // isUgaliTembelePlate is set by the cooking system itself
+        // (PrepareForUgaliTembele / PrepareForTembeleOnly), so it is the most
+        // truthful record in the project of what is physically on this plate.
+        // =====================================================
+
+        customerMenuManager.LatchServedDish(
+            isUgaliTembelePlate
+                ? LevelOneDish.UgaliTembele
+                : LevelOneDish.PotatoLeaves
+        );
+
+        // =====================================================
         // HIDE FOOD ON PLATE
         // =====================================================
 
@@ -163,19 +177,30 @@ public class Plate2 : MonoBehaviour
         }
 
         // =====================================================
-        // SHOW SERVED UI
+        // SHOW SERVED UI -- VALID COMBO ONLY
+        //
+        // A single ingredient is not a successful order, so it gets no
+        // confirmation UI, exactly as it gets no plate and no coins.
         // =====================================================
 
-        if (customerMenuManager.servedTick != null)
+        if (customerMenuManager.isValidOrder)
         {
-            customerMenuManager.servedTick
-                .SetActive(true);
-        }
+            if (customerMenuManager.servedTick != null)
+            {
+                customerMenuManager.servedTick
+                    .SetActive(true);
+            }
 
-        if (customerMenuManager.servedText != null)
+            if (customerMenuManager.servedText != null)
+            {
+                customerMenuManager.servedText
+                    .SetActive(true);
+            }
+        }
+        else
         {
-            customerMenuManager.servedText
-                .SetActive(true);
+            // No box at all for an invalid order -- not even an empty one.
+            customerMenuManager.HideOrderBoxForInvalidOrder();
         }
 
         // =====================================================

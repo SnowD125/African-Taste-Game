@@ -14,6 +14,9 @@ public class FirstCustomer3 : MonoBehaviour
 
     [Header("Customer Waiting")]
     public float waitingTime = 600f;
+    [Tooltip("Extra wait after waitingTime before the customer gets angry " +
+             "and leaves. Same behaviour and value as Level Two's angryDelay.")]
+    public float angryDelay = 5f;
 
     public CustomerMenuTrigger3 customerOrder;
     public GameObject orderCanvas;
@@ -177,6 +180,12 @@ public class FirstCustomer3 : MonoBehaviour
     {
         yield return new WaitForSeconds(
             waitingTime
+        );
+
+        // Same as Level Two: after the waiting time, a further angryDelay
+        // before the customer gets angry and leaves.
+        yield return new WaitForSeconds(
+            angryDelay
         );
 
         if (!isLeaving)
@@ -542,6 +551,9 @@ public class FirstCustomer3 : MonoBehaviour
             );
 
             PlayerPrefs.Save();
+            
+            // Unlocks the next country in the Food Menu.
+            LevelProgress.MarkCompleted(3);
 
             Debug.Log(
                 "LEVEL THREE COMPLETE → LEVEL COMPLETE THREE"

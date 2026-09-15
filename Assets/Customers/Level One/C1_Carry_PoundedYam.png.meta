@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: 41f4ed2ea849ef352528be3a820daf0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2813672039712421199
+    second: C1_Carry_PoundedYam_0
+  - first:
+      213: -1925921042812782214
+    second: C1_Carry_PoundedYam_1
+  - first:
+      213: 4317789239659412081
+    second: C1_Carry_PoundedYam_2
+  - first:
+      213: -64400552220032112
+    second: C1_Carry_PoundedYam_3
+  - first:
+      213: -1245294527875386900
+    second: C1_Carry_PoundedYam_4
+  - first:
+      213: -1466927497474615167
+    second: C1_Carry_PoundedYam_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.017391}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: C1_Carry_PoundedYam_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34476ca6cdc007c2a9c95388e62abdd
+      internalID: -2813672039712421199
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_PoundedYam_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909099a8ffdd7e1dc5fb079039c8ffbc
+      internalID: -1925921042812782214
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_PoundedYam_2
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac961cf444659f69d74d966593686cee
+      internalID: 4317789239659412081
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_PoundedYam_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43449032d3e0772f4fdc797f014ca44f
+      internalID: -64400552220032112
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_PoundedYam_4
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bed387874e49ea837036aee8d8c9fb
+      internalID: -1245294527875386900
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_PoundedYam_5
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cc6a0df3b08d4e24f6a70d3a3fb3bc
+      internalID: -1466927497474615167
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: af4e6240fdea1fe5bc62d8cec88d455f
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      C1_Carry_PoundedYam_0: -2813672039712421199
+      C1_Carry_PoundedYam_1: -1925921042812782214
+      C1_Carry_PoundedYam_2: 4317789239659412081
+      C1_Carry_PoundedYam_3: -64400552220032112
+      C1_Carry_PoundedYam_4: -1245294527875386900
+      C1_Carry_PoundedYam_5: -1466927497474615167
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

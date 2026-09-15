@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 33ba759fd06e26d21bf392e13e53df15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2166406374213313457
+    second: L2C3_Walk_0
+  - first:
+      213: -423562460446998529
+    second: L2C3_Walk_1
+  - first:
+      213: 4292008589882496093
+    second: L2C3_Walk_2
+  - first:
+      213: 2159156532611137736
+    second: L2C3_Walk_3
+  - first:
+      213: 4096317107930269199
+    second: L2C3_Walk_4
+  - first:
+      213: 3780272221021780188
+    second: L2C3_Walk_5
+  - first:
+      213: 1275046311695557899
+    second: L2C3_Walk_6
+  - first:
+      213: 1017236768260524401
+    second: L2C3_Walk_7
+  - first:
+      213: 1273324995059603728
+    second: L2C3_Walk_8
+  - first:
+      213: 1642684555722173210
+    second: L2C3_Walk_9
+  - first:
+      213: -3875847716550322398
+    second: L2C3_Walk_10
+  - first:
+      213: 4150498326805137962
+    second: L2C3_Walk_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.02}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L2C3_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beacacd481b763d120167641297daec0
+      internalID: 2166406374213313457
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7d9e7812c1d2034df27d2cc038f8e6
+      internalID: -423562460446998529
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f46eb2a2a1520715aad9ddfb4b9c01
+      internalID: 4292008589882496093
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa339b0495d85bff331b64be97544ab
+      internalID: 2159156532611137736
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b825f50ef4a95f57b3c0197b660779
+      internalID: 4096317107930269199
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbc5b147db45607f856dd29d2fa59fd
+      internalID: 3780272221021780188
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de44cf160cb0b4b65d4260a2c7560742
+      internalID: 1275046311695557899
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece034efa1e7566e89523b64cf23fcc6
+      internalID: 1017236768260524401
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_8
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b510cf3e6df951c83d5c28d6d2a0adb
+      internalID: 1273324995059603728
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_9
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322f1909a54fe59dcc82b015dc96b3af
+      internalID: 1642684555722173210
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_10
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b202be282dc4b14678521cf098297d
+      internalID: -3875847716550322398
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_Walk_11
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0967b1a6ff523fac6525da5d2defc62
+      internalID: 4150498326805137962
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 9b154670ab6ab6be4a46a89a40699015
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      L2C3_Walk_0: 2166406374213313457
+      L2C3_Walk_1: -423562460446998529
+      L2C3_Walk_2: 4292008589882496093
+      L2C3_Walk_3: 2159156532611137736
+      L2C3_Walk_4: 4096317107930269199
+      L2C3_Walk_5: 3780272221021780188
+      L2C3_Walk_6: 1275046311695557899
+      L2C3_Walk_7: 1017236768260524401
+      L2C3_Walk_8: 1273324995059603728
+      L2C3_Walk_9: 1642684555722173210
+      L2C3_Walk_10: -3875847716550322398
+      L2C3_Walk_11: 4150498326805137962
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

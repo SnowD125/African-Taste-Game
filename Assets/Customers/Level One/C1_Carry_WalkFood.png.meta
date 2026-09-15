@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: ec3dccc4245767a074ee65d85e8ca33d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 640620692174012
+    second: C1_Carry_WalkFood_0
+  - first:
+      213: -1763010190324432468
+    second: C1_Carry_WalkFood_1
+  - first:
+      213: 3554953542835339018
+    second: C1_Carry_WalkFood_2
+  - first:
+      213: -4167794254200116291
+    second: C1_Carry_WalkFood_3
+  - first:
+      213: -3457128575100886051
+    second: C1_Carry_WalkFood_4
+  - first:
+      213: 2477031304420809762
+    second: C1_Carry_WalkFood_5
+  - first:
+      213: -3473504282933369049
+    second: C1_Carry_WalkFood_6
+  - first:
+      213: 2296617387339633949
+    second: C1_Carry_WalkFood_7
+  - first:
+      213: -2592688228721149049
+    second: C1_Carry_WalkFood_8
+  - first:
+      213: 1242431731366581231
+    second: C1_Carry_WalkFood_9
+  - first:
+      213: -1753898763636322374
+    second: C1_Carry_WalkFood_10
+  - first:
+      213: -1318827525340204228
+    second: C1_Carry_WalkFood_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.017391}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446b5e559bbf50bfb8d6c16ed79abdd6
+      internalID: 640620692174012
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64a2a551b5ddd13407dd8da55771589
+      internalID: -1763010190324432468
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_2
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5501ddaa6d2a3278741f220fdf9edf2b
+      internalID: 3554953542835339018
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f990fe6d6f4174ac164355456fd645
+      internalID: -4167794254200116291
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_4
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aef2ff972a13377017bb42bfb54c52c
+      internalID: -3457128575100886051
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_5
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dca6540edb1cab27055283f2a73719
+      internalID: 2477031304420809762
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_6
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966af33bb109710d2a04ddbed08618f9
+      internalID: -3473504282933369049
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_7
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9cdbaffee04618529c1f866f23331b
+      internalID: 2296617387339633949
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_8
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020edf2a9cb8510497375c8b8b91375f
+      internalID: -2592688228721149049
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_9
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e6f9133133b240481ee644442a4ae6
+      internalID: 1242431731366581231
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_10
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a98bc675f05677c7dd7fe36c9a35f1
+      internalID: -1753898763636322374
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C1_Carry_WalkFood_11
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 0
+        width: 139
+        height: 230
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454944bcf16fd2e2438312aa68b88e63
+      internalID: -1318827525340204228
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 7578e2b92f240991811bcb786eac438e
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      C1_Carry_WalkFood_0: 640620692174012
+      C1_Carry_WalkFood_1: -1763010190324432468
+      C1_Carry_WalkFood_2: 3554953542835339018
+      C1_Carry_WalkFood_3: -4167794254200116291
+      C1_Carry_WalkFood_4: -3457128575100886051
+      C1_Carry_WalkFood_5: 2477031304420809762
+      C1_Carry_WalkFood_6: -3473504282933369049
+      C1_Carry_WalkFood_7: 2296617387339633949
+      C1_Carry_WalkFood_8: -2592688228721149049
+      C1_Carry_WalkFood_9: 1242431731366581231
+      C1_Carry_WalkFood_10: -1753898763636322374
+      C1_Carry_WalkFood_11: -1318827525340204228
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

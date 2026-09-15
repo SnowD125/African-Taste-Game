@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 52f4f504da10dc16c2babc42c0329229
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2355437797665788819
+    second: L3C3_Carry_Jollof_0
+  - first:
+      213: -1585309991943531095
+    second: L3C3_Carry_Jollof_1
+  - first:
+      213: 1352535349633002535
+    second: L3C3_Carry_Jollof_2
+  - first:
+      213: 4034729830588238197
+    second: L3C3_Carry_Jollof_3
+  - first:
+      213: -1286399785376761176
+    second: L3C3_Carry_Jollof_4
+  - first:
+      213: -3875794322358086017
+    second: L3C3_Carry_Jollof_5
+  - first:
+      213: -3145167577066435705
+    second: L3C3_Carry_Jollof_6
+  - first:
+      213: -2676171001796610665
+    second: L3C3_Carry_Jollof_7
+  - first:
+      213: 833479374955922961
+    second: L3C3_Carry_Jollof_8
+  - first:
+      213: -349059792908282413
+    second: L3C3_Carry_Jollof_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.0199}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L3C3_Carry_Jollof_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a4165bbccd17e2204546d15646cf86
+      internalID: 2355437797665788819
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_Jollof_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94afae5334ebadf3f98c47d0d5bc957a
+      internalID: -1585309991943531095
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_Jollof_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fac48d4603556a4429af77cb93fcb6
+      internalID: 1352535349633002535
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_Jollof_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844f02c2cfb6393accca71ede1c84d4d
+      internalID: 4034729830588238197
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_Jollof_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270f7f9047f25737971bae8ac6fa58c2
+      internalID: -1286399785376761176
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_Jollof_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3621ee9195906673a249cabf87afb207
+      internalID: -3875794322358086017
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_Jollof_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4186c85a48a17aa35e04b86f3bf535
+      internalID: -3145167577066435705
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_Jollof_7
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a8b4fd9160b867138a21985c2238fd
+      internalID: -2676171001796610665
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_Jollof_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0875d0e6e18d86df30a8d31e0023916
+      internalID: 833479374955922961
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_Jollof_9
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44e4a35c20944cfc11e19049eb0b38d
+      internalID: -349059792908282413
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 146463800170c1058ed7b08f46d773bf
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      L3C3_Carry_Jollof_0: 2355437797665788819
+      L3C3_Carry_Jollof_1: -1585309991943531095
+      L3C3_Carry_Jollof_2: 1352535349633002535
+      L3C3_Carry_Jollof_3: 4034729830588238197
+      L3C3_Carry_Jollof_4: -1286399785376761176
+      L3C3_Carry_Jollof_5: -3875794322358086017
+      L3C3_Carry_Jollof_6: -3145167577066435705
+      L3C3_Carry_Jollof_7: -2676171001796610665
+      L3C3_Carry_Jollof_8: 833479374955922961
+      L3C3_Carry_Jollof_9: -349059792908282413
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

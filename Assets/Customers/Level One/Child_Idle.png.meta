@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: 1d9d9ef5af0106fc73f8cb8d6dffea88
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 363601175405800801
+    second: Child_Idle_0
+  - first:
+      213: 2403013214859155705
+    second: Child_Idle_1
+  - first:
+      213: -1235993889406016169
+    second: Child_Idle_2
+  - first:
+      213: 1851904842667373596
+    second: Child_Idle_3
+  - first:
+      213: 4483816464402458808
+    second: Child_Idle_4
+  - first:
+      213: -4480552753016592125
+    second: Child_Idle_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.015748}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Child_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb06a4a57c7da26b1c80bd3b13ebcfa3
+      internalID: 363601175405800801
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58da77267a8dd213bb6030c17ad135a8
+      internalID: 2403013214859155705
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3121972ef83ad10808f3de168725e22
+      internalID: -1235993889406016169
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12995c6debb850653e4b4e2c636a729
+      internalID: 1851904842667373596
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb77491d8eab546dc4f16e2b19ba974a
+      internalID: 4483816464402458808
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143d5f2278a274f3d2e03ec180aaa1c0
+      internalID: -4480552753016592125
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 01f9020e6b288979b9d18813f24f2074
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Child_Idle_0: 363601175405800801
+      Child_Idle_1: 2403013214859155705
+      Child_Idle_2: -1235993889406016169
+      Child_Idle_3: 1851904842667373596
+      Child_Idle_4: 4483816464402458808
+      Child_Idle_5: -4480552753016592125
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

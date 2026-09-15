@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d9f5198136490ca4b560b7d026f8af, type: 3}
+  m_Name: ChefRoster
+  m_EditorClassIdentifier: 
+  chefs:
+  - level: 1
+    displayName: Male chef
+    portrait: {fileID: 21300000, guid: c4e17b90a35d84e2ab7f6d1c93e05a48, type: 3}
+  - level: 2
+    displayName: Female chef - PLACEHOLDER, still showing the male sprite
+    portrait: {fileID: 21300000, guid: c4e17b90a35d84e2ab7f6d1c93e05a48, type: 3}
+  - level: 3
+    displayName: Male chef
+    portrait: {fileID: 21300000, guid: c4e17b90a35d84e2ab7f6d1c93e05a48, type: 3}
+  - level: 4
+    displayName: Female chef - future Level 4, PLACEHOLDER
+    portrait: {fileID: 21300000, guid: c4e17b90a35d84e2ab7f6d1c93e05a48, type: 3}
+  fallbackPortrait: {fileID: 21300000, guid: c4e17b90a35d84e2ab7f6d1c93e05a48, type: 3}

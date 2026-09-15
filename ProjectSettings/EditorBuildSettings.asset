@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/LoadingScene.unity
     guid: 080618824f4336b4a9d54efcef20bddc
   - enabled: 1
-    path: Assets/Scenes/Food Menu.unity
-    guid: 93ab8f815211a6b49bfd2e4fdc2f728e
+    path: Assets/Scenes/Food Menu New.unity
+    guid: 2269bd9586b441ddb9b81202c36132eb
   - enabled: 1
     path: Assets/Scenes/Tanzania Story.unity
     guid: 6d81122e86271464ea478443395c25e9
@@ -35,6 +35,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelComplete two.unity
     guid: 868d2fde8358f4849a1212f53389e830
+  - enabled: 1
+    path: Assets/Scenes/Ghana Story.unity
+    guid: a5d1f83c2e7b409d6c14a8f30b52e971
+  - enabled: 1
+    path: Assets/Scenes/Level Three.unity
+    guid: e5c438ef4f1a00b438fc859b03a8dd0b
+  - enabled: 1
+    path: Assets/Scenes/LevelComplete Three.unity
+    guid: b6e2a94f1d3c807a5e9b04c2f138d7e5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

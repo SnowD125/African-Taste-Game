@@ -8,7 +8,8 @@ public class PotClick : MonoBehaviour
     {
         if (cookingManager != null)
         {
-            cookingManager.StartUgaliCooking(); // 🔥 Changed from ServeFood to StartUgaliCooking
+            // Starts the cook, or takes the cooked ugali out of the pot.
+            cookingManager.ClickPot();
         }
     }
 }

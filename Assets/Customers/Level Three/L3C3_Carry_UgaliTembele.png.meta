@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 64a324ec12e3a8e9a60ade1c3cb9bb4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 161410401484004935
+    second: L3C3_Carry_UgaliTembele_0
+  - first:
+      213: -4216563212155684144
+    second: L3C3_Carry_UgaliTembele_1
+  - first:
+      213: 3501875973340315319
+    second: L3C3_Carry_UgaliTembele_2
+  - first:
+      213: 540744868477130988
+    second: L3C3_Carry_UgaliTembele_3
+  - first:
+      213: 2778884816343210938
+    second: L3C3_Carry_UgaliTembele_4
+  - first:
+      213: 1153379364805533920
+    second: L3C3_Carry_UgaliTembele_5
+  - first:
+      213: -4501357425556434383
+    second: L3C3_Carry_UgaliTembele_6
+  - first:
+      213: 2498102901160170994
+    second: L3C3_Carry_UgaliTembele_7
+  - first:
+      213: -207165591589742297
+    second: L3C3_Carry_UgaliTembele_8
+  - first:
+      213: 1431158256707296401
+    second: L3C3_Carry_UgaliTembele_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.0199}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L3C3_Carry_UgaliTembele_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa80ac229f5a807c24aedd8f05e85207
+      internalID: 161410401484004935
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_UgaliTembele_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0620067e1993e4974534dc97e240957b
+      internalID: -4216563212155684144
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_UgaliTembele_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adf2a1b19eafb9e970d261118688092
+      internalID: 3501875973340315319
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_UgaliTembele_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e5c6f8340835d55638e2004ea6249d
+      internalID: 540744868477130988
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_UgaliTembele_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b350efafba20f6968b547084ac5f9668
+      internalID: 2778884816343210938
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_UgaliTembele_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8892b94f443b2733751c26000f46dc
+      internalID: 1153379364805533920
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_UgaliTembele_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d39807961d86280a5e21893f21bd43
+      internalID: -4501357425556434383
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_UgaliTembele_7
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43150a50b906bfa22f0d3c3f25e7706
+      internalID: 2498102901160170994
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_UgaliTembele_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e7cd3d01c72f4de32aedc493193879
+      internalID: -207165591589742297
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Carry_UgaliTembele_9
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce084c8975b5efa69322ba13c6cf390
+      internalID: 1431158256707296401
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: ceb0dbc6354ef8e5bb97d587648cf980
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      L3C3_Carry_UgaliTembele_0: 161410401484004935
+      L3C3_Carry_UgaliTembele_1: -4216563212155684144
+      L3C3_Carry_UgaliTembele_2: 3501875973340315319
+      L3C3_Carry_UgaliTembele_3: 540744868477130988
+      L3C3_Carry_UgaliTembele_4: 2778884816343210938
+      L3C3_Carry_UgaliTembele_5: 1153379364805533920
+      L3C3_Carry_UgaliTembele_6: -4501357425556434383
+      L3C3_Carry_UgaliTembele_7: 2498102901160170994
+      L3C3_Carry_UgaliTembele_8: -207165591589742297
+      L3C3_Carry_UgaliTembele_9: 1431158256707296401
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

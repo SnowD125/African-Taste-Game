@@ -14,7 +14,7 @@ public class MenuMusic : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Main Menu" || scene.name == "LoadingScene" || scene.name == "Food Menu")
+        if (scene.name == "Main Menu" || scene.name == "LoadingScene" || scene.name == "Food Menu New")
         {
             if (!music.isPlaying)
             {

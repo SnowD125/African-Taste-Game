@@ -209,6 +209,18 @@ public class Plate : MonoBehaviour
 
 
         // =====================================================
+        // LATCH WHAT WAS ACTUALLY SERVED
+        //
+        // Frozen here, at the instant the serve is committed, so the pending
+        // Invoke(HideMenu, 5f) cannot rewrite the order during the 2s served
+        // animation. The customer carries THIS, not whatever selectedFood
+        // happens to hold by the time ServeCustomer() runs.
+        // =====================================================
+
+        customerMenuManager.LatchServedDish();
+
+
+        // =====================================================
         // HIDE FOOD ON PLATE
         // =====================================================
 
@@ -242,24 +254,30 @@ public class Plate : MonoBehaviour
 
 
         // =====================================================
-        // SERVED TICK
+        // SERVED CONFIRMATION -- VALID COMBO ONLY
+        //
+        // A single ingredient is not a successful order, so it gets no
+        // confirmation UI, exactly as it gets no plate and no coins.
         // =====================================================
 
-        if (customerMenuManager.servedTick != null)
+        if (customerMenuManager.isValidOrder)
         {
-            customerMenuManager.servedTick
-                .SetActive(true);
+            if (customerMenuManager.servedTick != null)
+            {
+                customerMenuManager.servedTick
+                    .SetActive(true);
+            }
+
+            if (customerMenuManager.servedText != null)
+            {
+                customerMenuManager.servedText
+                    .SetActive(true);
+            }
         }
-
-
-        // =====================================================
-        // SERVED TEXT
-        // =====================================================
-
-        if (customerMenuManager.servedText != null)
+        else
         {
-            customerMenuManager.servedText
-                .SetActive(true);
+            // No box at all for an invalid order -- not even an empty one.
+            customerMenuManager.HideOrderBoxForInvalidOrder();
         }
 
 

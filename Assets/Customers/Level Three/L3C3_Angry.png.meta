@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: c8717a8223f1b34427d626a9b9f589fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3907145358243207634
+    second: L3C3_Angry_0
+  - first:
+      213: 1219111276521801529
+    second: L3C3_Angry_1
+  - first:
+      213: 1953880689039188406
+    second: L3C3_Angry_2
+  - first:
+      213: 4213637460057707597
+    second: L3C3_Angry_3
+  - first:
+      213: 2235450946617848610
+    second: L3C3_Angry_4
+  - first:
+      213: -1784301572797961113
+    second: L3C3_Angry_5
+  - first:
+      213: -3729219255786596355
+    second: L3C3_Angry_6
+  - first:
+      213: -1915686560629320097
+    second: L3C3_Angry_7
+  - first:
+      213: -1339400930343138439
+    second: L3C3_Angry_8
+  - first:
+      213: -193245498296044561
+    second: L3C3_Angry_9
+  - first:
+      213: -2180366182944686752
+    second: L3C3_Angry_10
+  - first:
+      213: 1306651598897131969
+    second: L3C3_Angry_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.0199}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L3C3_Angry_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16920c11f91b7bebf39cc0d5c8b9f8f
+      internalID: -3907145358243207634
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b794a1bba8906ac5201e4b346a6b2c80
+      internalID: 1219111276521801529
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc06631f27317f0f181637b46a4057f0
+      internalID: 1953880689039188406
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23c199050746e8bf690ad1ac35c8aab
+      internalID: 4213637460057707597
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2569149461f655b343e34de163047d9c
+      internalID: 2235450946617848610
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bb3f1d666fca36b96d31b6391cdd37
+      internalID: -1784301572797961113
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab819355021a41e93f332abe934a709
+      internalID: -3729219255786596355
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_7
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57968fd0942e20dacb48e1717ff4290
+      internalID: -1915686560629320097
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e519ca0944f328318355fcf7ecdad8f3
+      internalID: -1339400930343138439
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_9
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dca2f65da7cfc17eea04c90f3e0fd0e
+      internalID: -193245498296044561
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_10
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa49e3b3e593b25ba79ccca249e131a
+      internalID: -2180366182944686752
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C3_Angry_11
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 0
+        width: 125
+        height: 201
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148287168efbde351981627ded69e680
+      internalID: 1306651598897131969
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 3399896101f8da475646dae493548a12
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      L3C3_Angry_0: -3907145358243207634
+      L3C3_Angry_1: 1219111276521801529
+      L3C3_Angry_2: 1953880689039188406
+      L3C3_Angry_3: 4213637460057707597
+      L3C3_Angry_4: 2235450946617848610
+      L3C3_Angry_5: -1784301572797961113
+      L3C3_Angry_6: -3729219255786596355
+      L3C3_Angry_7: -1915686560629320097
+      L3C3_Angry_8: -1339400930343138439
+      L3C3_Angry_9: -193245498296044561
+      L3C3_Angry_10: -2180366182944686752
+      L3C3_Angry_11: 1306651598897131969
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

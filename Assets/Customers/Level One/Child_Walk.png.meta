@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 094ce7daf2734dd4da9a02a071dcb75d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1829739012717142144
+    second: Child_Walk_0
+  - first:
+      213: -2761551121118120437
+    second: Child_Walk_1
+  - first:
+      213: -3310309483189859571
+    second: Child_Walk_2
+  - first:
+      213: -1243218564007510337
+    second: Child_Walk_3
+  - first:
+      213: -1272969790949854553
+    second: Child_Walk_4
+  - first:
+      213: 4151298974781422687
+    second: Child_Walk_5
+  - first:
+      213: 4092951730703596307
+    second: Child_Walk_6
+  - first:
+      213: -291738517759788254
+    second: Child_Walk_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.015748}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Child_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d29729d8bdc44298afcd6cf1b1be20
+      internalID: 1829739012717142144
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bf14257973eb07b4d430c8f8ade166
+      internalID: -2761551121118120437
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998099d285dc503bf27e8c1a105f8e58
+      internalID: -3310309483189859571
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaba304eef2c9c03c8041bf5b1033e2b
+      internalID: -1243218564007510337
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a29ed5b533eb5b3cae03076ddd3b74
+      internalID: -1272969790949854553
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d768bcc329feb3626f7bec8e9a1a78
+      internalID: 4151298974781422687
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae637fd29e8aca3f988294e423cc7cf8
+      internalID: 4092951730703596307
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Child_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 0
+        width: 209
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5, y: 0.015748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436198ba8f07d1a40fe28dc518bee423
+      internalID: -291738517759788254
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: c42522883b1d51e939b5762a5ad55c3d
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Child_Walk_0: 1829739012717142144
+      Child_Walk_1: -2761551121118120437
+      Child_Walk_2: -3310309483189859571
+      Child_Walk_3: -1243218564007510337
+      Child_Walk_4: -1272969790949854553
+      Child_Walk_5: 4151298974781422687
+      Child_Walk_6: 4092951730703596307
+      Child_Walk_7: -291738517759788254
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

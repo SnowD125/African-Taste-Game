@@ -15,6 +15,10 @@ public class LevelCompleteManager : MonoBehaviour
     [Header("Level Settings")]
     public bool isLevelOneComplete = true;
 
+    // Optional. When set, this scene loads instead of the default branch.
+    // Existing scenes leave it empty, so Tanzania -> Nigeria is unchanged.
+    public string nextSceneOverride = "";
+
 
     void Start()
     {
@@ -23,7 +27,8 @@ public class LevelCompleteManager : MonoBehaviour
         if (totalCoinsText != null)
         {
             totalCoinsText.text =
-                "Total Coins: " + coins.ToString();
+                "<size=46><color=#FFD34D>TOTAL COINS</color></size><br>" +
+                "<size=104>" + coins.ToString() + "</size>";
         }
 
         if (celebrationSound != null && Camera.main != null)
@@ -50,10 +55,10 @@ public class LevelCompleteManager : MonoBehaviour
             yield break;
 
         Vector2 startPos =
-            new Vector2(-450f, -600f);
+            new Vector2(-635f, -1100f);
 
         Vector2 endPos =
-            new Vector2(-450f, -50f);
+            new Vector2(-635f, -86f);
 
         float t = 0f;
         float duration = 0.8f;
@@ -85,6 +90,13 @@ public class LevelCompleteManager : MonoBehaviour
 
     public void OnContinueButton()
     {
+        if (!string.IsNullOrEmpty(nextSceneOverride))
+        {
+            Debug.Log("LEVEL COMPLETE -> " + nextSceneOverride);
+            SceneManager.LoadScene(nextSceneOverride);
+            return;
+        }
+
         if (isLevelOneComplete)
         {
             Debug.Log(

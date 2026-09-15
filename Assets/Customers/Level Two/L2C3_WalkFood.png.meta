@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: b35800c797ddb174ce86fb7a5ca44ab7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1057844178405854533
+    second: L2C3_WalkFood_0
+  - first:
+      213: 2946681943203799839
+    second: L2C3_WalkFood_1
+  - first:
+      213: 3657988286239540240
+    second: L2C3_WalkFood_2
+  - first:
+      213: 1170921154472911198
+    second: L2C3_WalkFood_3
+  - first:
+      213: -2297960330581213394
+    second: L2C3_WalkFood_4
+  - first:
+      213: 2391381776324289060
+    second: L2C3_WalkFood_5
+  - first:
+      213: -4451641497604629258
+    second: L2C3_WalkFood_6
+  - first:
+      213: -798879695591669260
+    second: L2C3_WalkFood_7
+  - first:
+      213: 1786316358979890534
+    second: L2C3_WalkFood_8
+  - first:
+      213: -133549888712559380
+    second: L2C3_WalkFood_9
+  - first:
+      213: -2273577015512435977
+    second: L2C3_WalkFood_10
+  - first:
+      213: -3990937372056477258
+    second: L2C3_WalkFood_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.02}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L2C3_WalkFood_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491aaed9399797d330a606657410bff0
+      internalID: -1057844178405854533
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcc1a225ea8dd248435f4fae0890ea6
+      internalID: 2946681943203799839
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_2
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ef8f4a381f7edddd9a4583143b31fc
+      internalID: 3657988286239540240
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf687d8b6e1dcd11f94a4c7d5b81f760
+      internalID: 1170921154472911198
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_4
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0850724af492506360df2d97a3573b3a
+      internalID: -2297960330581213394
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_5
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74b94c559df0caa1861789e1304184a
+      internalID: 2391381776324289060
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_6
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18a687290b644f9b739f1b186a063f3
+      internalID: -4451641497604629258
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_7
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f1255bc629518fdfcf25c605913cf1
+      internalID: -798879695591669260
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_8
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db989c145ba47775d3b3811787a0c73f
+      internalID: 1786316358979890534
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_9
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c08c15620ee5c67c2adcfa863d8ee1b
+      internalID: -133549888712559380
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_10
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26751cc124cdcf925638cbb39083f321
+      internalID: -2273577015512435977
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L2C3_WalkFood_11
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 0
+        width: 139
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe67acc0dd375eaafdec055614b84eff
+      internalID: -3990937372056477258
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: bc56e1854b6e05ab76116be22fad2e6b
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      L2C3_WalkFood_0: -1057844178405854533
+      L2C3_WalkFood_1: 2946681943203799839
+      L2C3_WalkFood_2: 3657988286239540240
+      L2C3_WalkFood_3: 1170921154472911198
+      L2C3_WalkFood_4: -2297960330581213394
+      L2C3_WalkFood_5: 2391381776324289060
+      L2C3_WalkFood_6: -4451641497604629258
+      L2C3_WalkFood_7: -798879695591669260
+      L2C3_WalkFood_8: 1786316358979890534
+      L2C3_WalkFood_9: -133549888712559380
+      L2C3_WalkFood_10: -2273577015512435977
+      L2C3_WalkFood_11: -3990937372056477258
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

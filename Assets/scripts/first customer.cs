@@ -25,8 +25,22 @@ public class FirstCustomer : MonoBehaviour
     public CoconutClick coconutClick;
 
     [Header("Walk With Food")]
+    [Tooltip("SUPERSEDED. Orientation now follows the direction of travel " +
+             "(see Face). Kept only so existing scene data is not lost.")]
     public bool flipXWhenCarrying = false;
+    [Tooltip("Not used by any code path.")]
     public float carryingYOffset = 10f;
+
+    [Header("Orientation")]
+    [Tooltip("Tick ONLY if the artwork is drawn facing RIGHT. The Level One " +
+             "customer art faces the camera, so this stays off and the " +
+             "customer is never mirrored while walking left.")]
+    public bool artFacesRight = false;
+
+    [Header("Carried Food")]
+    [Tooltip("Shows the plate the customer walks away with. Found on this " +
+             "GameObject if left empty.")]
+    public CustomerCarry carry;
 
     [Header("Coins")]
     public float maxServiceTime = 60f;
@@ -46,12 +60,23 @@ public class FirstCustomer : MonoBehaviour
     private float lockedPositionY;
     private float serviceStartTime = 0f;
 
+    // What the serving system actually put on the plate. Read once, in
+    // ServeCustomer(), and never re-read afterwards.
+    private LevelOneDish servedDish = LevelOneDish.None;
+
+    // False when the customer walks out on a timeout. Used to decide whether
+    // the abandoned order's food has to be cleared out of the kitchen.
+    private bool wasServed = false;
+
     public bool IsLeaving => isLeaving;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (carry == null)
+            carry = GetComponent<CustomerCarry>();
     }
 
     void Start()
@@ -76,6 +101,11 @@ public class FirstCustomer : MonoBehaviour
         hasStartedWaiting = false;
 
         serviceStartTime = 0f;
+        servedDish = LevelOneDish.None;
+        wasServed = false;
+
+        if (carry != null)
+            carry.Hide();
 
         SetupReferences();
 
@@ -130,6 +160,30 @@ public class FirstCustomer : MonoBehaviour
         );
     }
 
+    // =========================================================
+    // ORIENTATION
+    //
+    // The old code did `spriteRenderer.flipX = flipXWhenCarrying` the moment
+    // the customer picked up its food. In the scene m_FlipX was 1 and
+    // flipXWhenCarrying was 0, so the customer flipped to face right and then
+    // walked LEFT to exitX = -60 -- the moonwalk. Facing is now derived from
+    // the actual direction of travel, and from nothing else.
+    // =========================================================
+
+    void Face(float directionX)
+    {
+        if (spriteRenderer == null)
+            return;
+
+        if (Mathf.Abs(directionX) < 0.001f)
+            return;
+
+        bool movingRight = directionX > 0f;
+
+        spriteRenderer.flipX =
+            artFacesRight ? !movingRight : movingRight;
+    }
+
     IEnumerator MoveToStopPoint()
     {
         if (animator == null)
@@ -137,6 +191,9 @@ public class FirstCustomer : MonoBehaviour
 
         animator.SetBool("isIdle", false);
         animator.SetBool("isCarrying", false);
+
+        // Walking in: face the stop point.
+        Face(stopX - transform.position.x);
 
         Vector2 targetPosition =
             new Vector2(
@@ -259,6 +316,8 @@ public class FirstCustomer : MonoBehaviour
             return;
         }
 
+        wasServed = true;
+
         Debug.Log(
             $"🍛 SERVING CUSTOMER = {name} ✅"
         );
@@ -269,14 +328,27 @@ public class FirstCustomer : MonoBehaviour
 
         int selectedFood = -1;
 
+        // A single ingredient is NOT a valid Level One order: no plate, no coins.
+        bool validOrder = false;
+
         if (customerOrder != null &&
             customerOrder.menuManager != null)
         {
             selectedFood =
                 customerOrder.menuManager.selectedFood;
 
+            // The plate latched this the instant it committed the serve, so a
+            // pending Invoke(HideMenu, 5f) can no longer change it.
+            validOrder = customerOrder.menuManager.isValidOrder;
+
+            servedDish = customerOrder.menuManager.servedDish;
+
+            if (servedDish == LevelOneDish.None)
+                servedDish = customerOrder.menuManager.CurrentDish();
+
             Debug.Log(
-                $"🍽️ {name} ORDER = selectedFood {selectedFood}"
+                $"🍽️ {name} ORDER = selectedFood {selectedFood}, " +
+                $"served dish = {servedDish}, valid combo = {validOrder}"
             );
         }
         else
@@ -290,7 +362,19 @@ public class FirstCustomer : MonoBehaviour
         // SET CARRYING FOOD
         // =====================================================
 
-        if (selectedFood == 0)
+        if (!validOrder)
+        {
+            // Single ingredient: no carry state at all.
+            animator.SetInteger(
+                "carryingFood",
+                0
+            );
+
+            Debug.Log(
+                $"🚫 {name} → single ingredient, no plate and no coins."
+            );
+        }
+        else if (selectedFood == 0)
         {
             // Ugali + Dagaa
             animator.SetInteger(
@@ -349,9 +433,17 @@ public class FirstCustomer : MonoBehaviour
             "isAngry"
         );
 
-        animator.SetTrigger(
-            "isHappy"
-        );
+        // The Wave state's ONLY exit transition requires isCarrying, which an
+        // invalid order never sets -- entering it would leave the customer
+        // stuck in the front-facing wave pose for the whole exit walk.
+        // Skipping it lets isIdle=false take Idle -> Walking, so an unserved
+        // customer walks out in the side-facing walk pose.
+        if (validOrder)
+        {
+            animator.SetTrigger(
+                "isHappy"
+            );
+        }
 
         // =====================================================
         // COINS
@@ -361,7 +453,7 @@ public class FirstCustomer : MonoBehaviour
             Time.time -
             serviceStartTime;
 
-        if (CoinManager.Instance != null)
+        if (validOrder && CoinManager.Instance != null)
         {
             CoinManager.Instance.AwardCoins(
                 timeUsed,
@@ -373,9 +465,12 @@ public class FirstCustomer : MonoBehaviour
         // START CARRYING ANIMATION
         // =====================================================
 
-        StartCoroutine(
-            SetWalkWithFoodAfterDelay()
-        );
+        if (validOrder)
+        {
+            StartCoroutine(
+                SetWalkWithFoodAfterDelay()
+            );
+        }
 
         // =====================================================
         // RESET COOKING
@@ -410,11 +505,12 @@ public class FirstCustomer : MonoBehaviour
 
             isCarrying = true;
 
-            if (spriteRenderer != null)
-            {
-                spriteRenderer.flipX =
-                    flipXWhenCarrying;
-            }
+            // Leaving: face the exit, not a hard-coded flag.
+            Face(exitX - transform.position.x);
+
+            // Show the dish that was actually served.
+            if (carry != null)
+                carry.Show(servedDish);
 
             animator.SetBool(
                 "isCarrying",
@@ -451,6 +547,8 @@ public class FirstCustomer : MonoBehaviour
     {
         float leaveSpeed =
             speed * 1.5f;
+
+        Face(exitX - transform.position.x);
 
         if (customerOrder != null)
             customerOrder.HideOrder();
@@ -511,6 +609,31 @@ public class FirstCustomer : MonoBehaviour
 
         isCarrying = false;
 
+        if (carry != null)
+            carry.Hide();
+
+        // =====================================================
+        // ABANDONED ORDER — CLEAR THE KITCHEN
+        //
+        // Only when this customer leaves WITHOUT being served. A served
+        // customer already reset cooking inside ServeCustomer(), so this
+        // cannot touch a valid order.
+        //
+        // Reuses the existing reset methods rather than adding a second
+        // reset system: ResetCookingState() clears the pot, the ready food
+        // and both plates; ResetCooking() clears the whole pan pipeline.
+        // Runs before the next customer is activated, and before the final
+        // customer triggers Level Complete.
+        // =====================================================
+
+        if (!wasServed)
+        {
+            Debug.Log($"🧹 {name} left unserved — clearing the abandoned order.");
+
+            cookingManager?.ResetCookingState();
+            vegCookingManager?.ResetCooking();
+        }
+
         // =====================================================
         // CLEAR CURRENT CUSTOMER
         // =====================================================
@@ -550,6 +673,9 @@ public class FirstCustomer : MonoBehaviour
             );
 
             PlayerPrefs.Save();
+            
+            // Unlocks the next country in the Food Menu.
+            LevelProgress.MarkCompleted(1);
 
             SceneManager.LoadScene(
                 "LevelComplete"

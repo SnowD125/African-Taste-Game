@@ -14,6 +14,9 @@ public class FirstCustomer2 : MonoBehaviour
 
     [Header("Customer Waiting")]
     public float waitingTime = 600f;
+    [Tooltip("Extra wait after waitingTime before the customer gets angry " +
+             "and leaves. Same behaviour and value as Level One's angryDelay.")]
+    public float angryDelay = 5f;
 
     public CustomerMenuTrigger2 customerOrder;
     public GameObject orderCanvas;
@@ -25,8 +28,16 @@ public class FirstCustomer2 : MonoBehaviour
     public JollofCookingManager jollofCookingManager;
 
     [Header("Walk With Food")]
+    [Tooltip("SUPERSEDED. Orientation now follows the direction of travel " +
+             "(see Face). Kept only so existing scene data is not lost.")]
     public bool flipXWhenCarrying = false;
     public float carryingYOffset = 10f;
+
+    [Header("Orientation")]
+    [Tooltip("Tick ONLY if this customer's side-view artwork (walking and " +
+             "walking with food) is drawn facing RIGHT. Facing is derived " +
+             "from the direction of travel, never from a serialized flipX.")]
+    public bool artFacesRight = false;
 
     [Header("Coins")]
     public float maxServiceTime = 600f;
@@ -39,6 +50,15 @@ public class FirstCustomer2 : MonoBehaviour
 
     private float lockedPositionY;
     private float serviceStartTime = 0f;
+
+    // Served-dish detection. The Egusi and Pounded Yam managers serve the
+    // customer the moment their dish is clicked, whatever the menu order was,
+    // and leave their state on Served afterwards. Remembering last frame's
+    // state lets ServeCustomer() tell a dish served THIS frame from a stale one.
+    private EgusiCookingManager egusiCookingManager;
+    private PoundedYamCookingManager poundedYamCookingManager;
+    private EgusiCookingManager.CookState egusiStateLastFrame;
+    private PoundedYamCookingManager.PoundedYamState yamStateLastFrame;
 
     public bool IsLeaving => isLeaving;
 
@@ -62,6 +82,8 @@ public class FirstCustomer2 : MonoBehaviour
         serviceStartTime = 0f;
 
         SetupReferences();
+
+        RememberServeStates();
 
         if (orderCanvas != null)
             orderCanvas.SetActive(false);
@@ -94,6 +116,55 @@ public class FirstCustomer2 : MonoBehaviour
             jollofCookingManager =
                 Object.FindFirstObjectByType<JollofCookingManager>();
         }
+
+        if (egusiCookingManager == null)
+        {
+            egusiCookingManager =
+                Object.FindFirstObjectByType<EgusiCookingManager>();
+        }
+
+        if (poundedYamCookingManager == null)
+        {
+            poundedYamCookingManager =
+                Object.FindFirstObjectByType<PoundedYamCookingManager>();
+        }
+    }
+
+    void LateUpdate()
+    {
+        RememberServeStates();
+    }
+
+    void RememberServeStates()
+    {
+        if (egusiCookingManager != null)
+            egusiStateLastFrame = egusiCookingManager.egusiState;
+
+        if (poundedYamCookingManager != null)
+            yamStateLastFrame = poundedYamCookingManager.yamState;
+    }
+
+    // =========================================================
+    // ORIENTATION
+    //
+    // Same rule as Level One Customer 2: facing is derived from the actual
+    // direction of travel and from nothing else. The old code walked in with
+    // whatever m_FlipX the scene held and walked out with flipXWhenCarrying,
+    // which was only right for today's spawn/exit sides and artwork.
+    // =========================================================
+
+    void Face(float directionX)
+    {
+        if (spriteRenderer == null)
+            return;
+
+        if (Mathf.Abs(directionX) < 0.001f)
+            return;
+
+        bool movingRight = directionX > 0f;
+
+        spriteRenderer.flipX =
+            artFacesRight ? !movingRight : movingRight;
     }
 
     IEnumerator MoveToStopPoint()
@@ -103,6 +174,9 @@ public class FirstCustomer2 : MonoBehaviour
 
         animator.SetBool("isIdle", false);
         animator.SetBool("isCarrying", false);
+
+        // Walking in: face the stop point.
+        Face(stopX - transform.position.x);
 
         Vector2 targetPosition =
             new Vector2(
@@ -159,6 +233,12 @@ public class FirstCustomer2 : MonoBehaviour
     {
         yield return new WaitForSeconds(
             waitingTime
+        );
+
+        // Same as Level One: after the waiting time, a further angryDelay
+        // before the customer gets angry and leaves.
+        yield return new WaitForSeconds(
+            angryDelay
         );
 
         if (!isLeaving)
@@ -232,6 +312,37 @@ public class FirstCustomer2 : MonoBehaviour
             Debug.LogWarning(
                 $"⚠️ {name}: CustomerMenuManager2 reference is NULL!"
             );
+        }
+
+        // =====================================================
+        // CARRY WHAT WAS ACTUALLY SERVED
+        //
+        // Egusi and Pounded Yam are served straight from their cooking
+        // managers, whatever the menu order was (or with no order at all),
+        // and their state flips to Served in this same frame. Jollof only
+        // reaches this method through ServePlate1(), which already requires
+        // selectedFood == 0, so it needs no override.
+        // =====================================================
+
+        if (
+            egusiCookingManager != null &&
+            egusiCookingManager.egusiState ==
+                EgusiCookingManager.CookState.Served &&
+            egusiStateLastFrame !=
+                EgusiCookingManager.CookState.Served
+        )
+        {
+            selectedFood = 1;
+        }
+        else if (
+            poundedYamCookingManager != null &&
+            poundedYamCookingManager.yamState ==
+                PoundedYamCookingManager.PoundedYamState.Served &&
+            yamStateLastFrame !=
+                PoundedYamCookingManager.PoundedYamState.Served
+        )
+        {
+            selectedFood = 2;
         }
 
         // =====================================================
@@ -368,11 +479,8 @@ public class FirstCustomer2 : MonoBehaviour
 
             isCarrying = true;
 
-            if (spriteRenderer != null)
-            {
-                spriteRenderer.flipX =
-                    flipXWhenCarrying;
-            }
+            // Leaving: face the exit, not a hard-coded flag.
+            Face(exitX - transform.position.x);
 
             animator.SetBool(
                 "isCarrying",
@@ -409,6 +517,9 @@ public class FirstCustomer2 : MonoBehaviour
     {
         float leaveSpeed =
             speed * 1.5f;
+
+        // Served or not: face the way the customer is about to walk.
+        Face(exitX - transform.position.x);
 
         if (customerOrder != null)
             customerOrder.HideOrder();
@@ -495,6 +606,9 @@ public class FirstCustomer2 : MonoBehaviour
             );
 
             PlayerPrefs.Save();
+            
+            // Unlocks the next country in the Food Menu.
+            LevelProgress.MarkCompleted(2);
 
             Debug.Log(
                 "LEVEL TWO COMPLETE → LEVEL COMPLETE TWO"

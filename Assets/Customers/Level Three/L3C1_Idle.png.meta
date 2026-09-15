@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: eb9c489257254b7a7683bfb06df7020f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2110599481152302899
+    second: L3C1_Idle_0
+  - first:
+      213: 634848479585281258
+    second: L3C1_Idle_1
+  - first:
+      213: -2181997562309993210
+    second: L3C1_Idle_2
+  - first:
+      213: 508336333230059170
+    second: L3C1_Idle_3
+  - first:
+      213: 741141781042399782
+    second: L3C1_Idle_4
+  - first:
+      213: -2111407543494363571
+    second: L3C1_Idle_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.017316}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L3C1_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76567cfd294caecf9907281ec048ff25
+      internalID: 2110599481152302899
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C1_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c0b9e624ff55e269e632ace0992b4d
+      internalID: 634848479585281258
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C1_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0bca3202e2630dd4c930c66b58285a
+      internalID: -2181997562309993210
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C1_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0cb4ff129a23c6fb7fd30e7aac91c81
+      internalID: 508336333230059170
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C1_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3be48fa35eac227a3ea1709db1598a
+      internalID: 741141781042399782
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C1_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2898282f9fdb6ce22b26567017e5419
+      internalID: -2111407543494363571
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 17372ce076a28fac6b16651ab155cb4a
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      L3C1_Idle_0: 2110599481152302899
+      L3C1_Idle_1: 634848479585281258
+      L3C1_Idle_2: -2181997562309993210
+      L3C1_Idle_3: 508336333230059170
+      L3C1_Idle_4: 741141781042399782
+      L3C1_Idle_5: -2111407543494363571
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

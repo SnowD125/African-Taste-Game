@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: 837f746c1c41964f471e87aef77c668d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1651748495293020460
+    second: L3C1_Carry_UgaliDagaa_0
+  - first:
+      213: 1179674158400628039
+    second: L3C1_Carry_UgaliDagaa_1
+  - first:
+      213: 4028563083342181980
+    second: L3C1_Carry_UgaliDagaa_2
+  - first:
+      213: 3624398515503254286
+    second: L3C1_Carry_UgaliDagaa_3
+  - first:
+      213: -627039191988201950
+    second: L3C1_Carry_UgaliDagaa_4
+  - first:
+      213: -2618829213891926838
+    second: L3C1_Carry_UgaliDagaa_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.017316}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L3C1_Carry_UgaliDagaa_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2c7db8aaa02ef6e1263ba994fcfeca
+      internalID: -1651748495293020460
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C1_Carry_UgaliDagaa_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bccf96b5180b4f561f41e686e1a641
+      internalID: 1179674158400628039
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C1_Carry_UgaliDagaa_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6d6ee2c50b4f9e912627b681c71bda
+      internalID: 4028563083342181980
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C1_Carry_UgaliDagaa_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ac2d56af9f00d8d308ba5f3ec3321d
+      internalID: 3624398515503254286
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C1_Carry_UgaliDagaa_4
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a47eb41fa9c5c8e276890e405b794f
+      internalID: -627039191988201950
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L3C1_Carry_UgaliDagaa_5
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 0
+        width: 138
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5, y: 0.017316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03824091dd475c2e137c77ea5c6c453f
+      internalID: -2618829213891926838
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 2b991178562aeaef60a7e40fa08577f4
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      L3C1_Carry_UgaliDagaa_0: -1651748495293020460
+      L3C1_Carry_UgaliDagaa_1: 1179674158400628039
+      L3C1_Carry_UgaliDagaa_2: 4028563083342181980
+      L3C1_Carry_UgaliDagaa_3: 3624398515503254286
+      L3C1_Carry_UgaliDagaa_4: -627039191988201950
+      L3C1_Carry_UgaliDagaa_5: -2618829213891926838
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:

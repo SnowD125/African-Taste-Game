@@ -24,6 +24,10 @@ public class CookingManager : MonoBehaviour
 
     bool isUgaliCooking = false;
     bool isUgaliReady = false;
+    // True once the player has taken the ugali out of the pot onto the plate.
+    // Equivalent to VegCookingManager's CookState.Served: stops a second pot
+    // click re-serving the same ugali.
+    bool isUgaliOnPlate = false;
     bool isTembeleCooking = false;
     bool isTembeleReady = false;
 
@@ -38,6 +42,7 @@ public class CookingManager : MonoBehaviour
         Debug.Log("ResetCookingState called");
         isUgaliCooking = false;
         isUgaliReady = false;
+        isUgaliOnPlate = false;
         isTembeleCooking = false;
         isTembeleReady = false;
 
@@ -48,6 +53,8 @@ public class CookingManager : MonoBehaviour
         readyTembele?.SetActive(false);
 
         boilingWater?.SetActive(true);
+
+        CancelInvoke();
 
         plate1Script?.ResetPlate();
         plate2Script?.ResetPlate();
@@ -70,21 +77,51 @@ public class CookingManager : MonoBehaviour
         ugaliCooking?.SetActive(true);
         Debug.Log("Ugali cooking started successfully");
 
-        Invoke(nameof(FinishUgaliCooking), cookingTime);
+        Invoke(nameof(UgaliCooked), cookingTime);
     }
 
-    void FinishUgaliCooking()
+    /// <summary>
+    /// The cook timer finishing only marks the ugali READY -- it stays visible in
+    /// the pot. This mirrors VegCookingManager, where the progress bar filling
+    /// sets CookState.ReadyToServe and the food only leaves the pan when the
+    /// player clicks it (TryServePan).
+    /// </summary>
+    void UgaliCooked()
     {
-        Debug.Log($"FinishUgaliCooking — isComboOrder={menuManager?.isComboOrder}");
         isUgaliCooking = false;
         isUgaliReady = true;
+
+        Debug.Log("Ugali is cooked — staying in the pot until the player clicks it.");
+    }
+
+    /// <summary>
+    /// Player-driven: clicking the pot takes the cooked ugali out onto the plate.
+    /// The ugali equivalent of VegCookingManager.TryServePan().
+    /// </summary>
+    public void TakeUgaliFromPot()
+    {
+        if (!isUgaliReady)
+        {
+            Debug.Log("Pot clicked — ugali is not ready yet.");
+            return;
+        }
+
+        if (isUgaliOnPlate)
+        {
+            Debug.Log("Pot clicked — the ugali is already on the plate.");
+            return;
+        }
+
+        isUgaliOnPlate = true;
+
+        Debug.Log($"TakeUgaliFromPot — isComboOrder={menuManager?.isComboOrder}");
 
         ugaliCooking?.SetActive(false);
         boilingWater?.SetActive(true);
 
         if (menuManager == null)
         {
-            Debug.LogError("menuManager IS NULL in FinishUgaliCooking");
+            Debug.LogError("menuManager IS NULL in TakeUgaliFromPot");
             return;
         }
 
@@ -106,6 +143,18 @@ public class CookingManager : MonoBehaviour
             VegCookingManager vegManager = Object.FindFirstObjectByType<VegCookingManager>();
             vegManager?.ForceHideDagaa();
         }
+    }
+
+    /// <summary>Every pot click: start cooking, or take the cooked ugali out.</summary>
+    public void ClickPot()
+    {
+        if (isUgaliReady || isUgaliOnPlate)
+        {
+            TakeUgaliFromPot();
+            return;
+        }
+
+        StartUgaliCooking();
     }
 
     public void StartTembeleCooking()
