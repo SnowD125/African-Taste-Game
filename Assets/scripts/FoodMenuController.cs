@@ -4,24 +4,56 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections;
 
+[System.Serializable]
+public class FoodMenuLevelData
+{
+    [Header("Dishes")]
+    public Sprite[] dishSprites;
+    public string[] dishNames;
+    public Vector4[] dishIconCrop;
+
+    [Header("Ingredients")]
+    public Sprite[] ingredientSprites;
+    public string[] ingredientNames;
+    public Vector4[] ingredientIconCrop;
+}
+
 /// <summary>
-/// Drives the Chef's Collection menu. It does NOT create any UI - every object
-/// referenced below is a real serialized scene object, visible and editable in
-/// the Editor. This script only updates page contents, selection, lock and
-/// completed state, and button interactability.
+/// Drives the Chef's Collection menu.
+///
+/// IMPORTANT:
+/// This script only controls Food Menu New.
+/// It does NOT modify gameplay, cooking, customers, coins, or level scenes.
+/// Each level has its own dish and ingredient data.
 /// </summary>
 public class FoodMenuController : MonoBehaviour
 {
-    [Header("Dish data (sprites, names and crops run in parallel)")]
-    public Sprite[] dishSprites;
-    public string[] dishNames;
-    /// <summary>Opaque bounds of each dish sprite, normalised and Y-up:
-    /// (x, y) = centre of the visible pixels relative to the sprite centre,
-    /// (z, w) = width/height of the visible pixels as a fraction of the sprite.
-    /// Lets the menu centre and size each item by what you can actually SEE
-    /// rather than by its transparent canvas. Leave empty to fall back to
-    /// plain preserveAspect.</summary>
-    public Vector4[] dishIconCrop;
+    // ================================================================
+    // LEVEL-SPECIFIC DATA
+    // ================================================================
+
+    [Header("LEVEL MENU DATA")]
+    [Tooltip("Index 0 = Tanzania, Index 1 = Nigeria, Index 2 = Ghana")]
+    public FoodMenuLevelData[] levels = new FoodMenuLevelData[3];
+
+
+    // ================================================================
+    // ACTIVE RUNTIME DATA
+    // These are filled automatically from the selected level.
+    // ================================================================
+
+    [HideInInspector] public Sprite[] dishSprites;
+    [HideInInspector] public string[] dishNames;
+    [HideInInspector] public Vector4[] dishIconCrop;
+
+    [HideInInspector] public Sprite[] ingredientSprites;
+    [HideInInspector] public string[] ingredientNames;
+    [HideInInspector] public Vector4[] ingredientIconCrop;
+
+
+    // ================================================================
+    // DISH SHELF
+    // ================================================================
 
     [Header("Dish shelf - serialized scene objects")]
     public Image[] dishSlots;
@@ -29,10 +61,10 @@ public class FoodMenuController : MonoBehaviour
     public Button dishPrevButton;
     public Button dishNextButton;
 
-    [Header("Ingredient data")]
-    public Sprite[] ingredientSprites;
-    public string[] ingredientNames;
-    public Vector4[] ingredientIconCrop;
+
+    // ================================================================
+    // INGREDIENT SHELF
+    // ================================================================
 
     [Header("Ingredient shelf - serialized scene objects")]
     public Image[] ingredientSlots;
@@ -40,292 +72,1122 @@ public class FoodMenuController : MonoBehaviour
     public Button ingredientPrevButton;
     public Button ingredientNextButton;
 
+
+    // ================================================================
+    // LEVEL SELECTION
+    // ================================================================
+
     [Header("Level selection (index 0 = Level 1)")]
     public Button[] levelButtons;
     public Image[] levelBands;
     public Image[] levelThumbnails;
-    /// <summary>Closed padlock - shown while a level is still locked.</summary>
+
+    /// <summary>
+    /// Closed padlock shown while a level is locked.
+    /// </summary>
     public GameObject[] lockIcons;
-    /// <summary>Open padlock - shown once a level is unlocked (and stays on when
-    /// it is completed and replayable). Locked = closed lock, unlocked = open lock.</summary>
+
+    /// <summary>
+    /// Open padlock shown once a level is unlocked.
+    /// </summary>
     public GameObject[] completedIcons;
+
     public GameObject[] selectionHighlights;
+
+
+    // ================================================================
+    // PLAY
+    // ================================================================
 
     [Header("Play")]
     public Button playButton;
 
+
+    // ================================================================
+    // CHEF
+    // ================================================================
+
     [Header("Chef (optional - shows the chef who cooks the selected level)")]
     public LevelChefBinder chefBinder;
+
+
+    // ================================================================
+    // TUNING
+    // ================================================================
 
     [Header("Tuning")]
     public float pageFadeSeconds = 0.16f;
 
-    static readonly Color[] LevelTint = {
+
+    static readonly Color[] LevelTint =
+    {
         new Color(0.18f, 0.62f, 0.31f, 1f),
         new Color(0.16f, 0.39f, 0.78f, 1f),
         new Color(0.48f, 0.23f, 0.66f, 1f)
     };
 
-    int dishPage, ingPage, selectedLevel = 1;
+
+    int dishPage;
+    int ingPage;
+    int selectedLevel = 1;
     bool busy;
 
-    // Icon slots are resized and nudged per sprite, so their authored rect is
-    // captured once and every later fit is measured from that.
-    Vector2[] dishIconHome, dishIconBox, ingIconHome, ingIconBox;
+
+    // Original authored icon positions/sizes.
+    Vector2[] dishIconHome;
+    Vector2[] dishIconBox;
+    Vector2[] ingIconHome;
+    Vector2[] ingIconBox;
+
+
+    // ================================================================
+    // AWAKE
+    // ================================================================
 
     void Awake()
     {
-        CaptureIconRects(dishSlots, out dishIconHome, out dishIconBox);
-        CaptureIconRects(ingredientSlots, out ingIconHome, out ingIconBox);
+        CaptureIconRects(
+            dishSlots,
+            out dishIconHome,
+            out dishIconBox
+        );
 
-        // Listeners are registered in Awake so that a later failure in Start
-        // cannot leave the buttons dead.
-        Hook(dishPrevButton, PrevDishPage, "dishPrevButton");
-        Hook(dishNextButton, NextDishPage, "dishNextButton");
-        Hook(ingredientPrevButton, PrevIngredientPage, "ingredientPrevButton");
-        Hook(ingredientNextButton, NextIngredientPage, "ingredientNextButton");
-        Hook(playButton, PlaySelected, "playButton");
+        CaptureIconRects(
+            ingredientSlots,
+            out ingIconHome,
+            out ingIconBox
+        );
 
+
+        // Dish buttons
+        Hook(
+            dishPrevButton,
+            PrevDishPage,
+            "dishPrevButton"
+        );
+
+        Hook(
+            dishNextButton,
+            NextDishPage,
+            "dishNextButton"
+        );
+
+
+        // Ingredient buttons
+        Hook(
+            ingredientPrevButton,
+            PrevIngredientPage,
+            "ingredientPrevButton"
+        );
+
+        Hook(
+            ingredientNextButton,
+            NextIngredientPage,
+            "ingredientNextButton"
+        );
+
+
+        // Play
+        Hook(
+            playButton,
+            PlaySelected,
+            "playButton"
+        );
+
+
+        // Level buttons
         for (int i = 0; i < Len(levelButtons); i++)
         {
             int level = i + 1;
+
             if (levelButtons[i] == null)
             {
-                Debug.LogWarning("FoodMenu: levelButtons[" + i + "] is not assigned.");
+                Debug.LogWarning(
+                    "FoodMenu: levelButtons[" + i + "] is not assigned."
+                );
+
                 continue;
             }
-            levelButtons[i].onClick.AddListener(delegate { SelectLevel(level); });
+
+            levelButtons[i].onClick.AddListener(
+                delegate
+                {
+                    SelectLevel(level);
+                }
+            );
         }
     }
 
-    static void CaptureIconRects(Image[] slots, out Vector2[] home, out Vector2[] box)
-    {
-        int n = Len(slots);
-        home = new Vector2[n];
-        box = new Vector2[n];
-        for (int i = 0; i < n; i++)
-        {
-            if (slots[i] == null) continue;
-            RectTransform rt = slots[i].rectTransform;
-            home[i] = rt.anchoredPosition;
-            box[i] = rt.sizeDelta;
-        }
-    }
 
-    static void Hook(Button b, UnityEngine.Events.UnityAction a, string name)
-    {
-        if (b == null) { Debug.LogWarning("FoodMenu: " + name + " is not assigned."); return; }
-        b.onClick.RemoveListener(a);   // guard against double registration
-        b.onClick.AddListener(a);
-    }
+    // ================================================================
+    // START
+    // ================================================================
 
     void Start()
     {
         selectedLevel = LevelProgress.SelectedLevel;
+
+        if (selectedLevel < 1 ||
+            selectedLevel > LevelProgress.LevelCount)
+        {
+            selectedLevel = 1;
+        }
+
+
+        ApplyLevelData(selectedLevel);
+
         RefreshDishes();
         RefreshIngredients();
         RefreshLevels();
     }
 
-    static int Len(System.Array a) { return a == null ? 0 : a.Length; }
-    static int Pages(int items, int per) { return (items <= 0 || per <= 0) ? 0 : (items + per - 1) / per; }
 
-    int DishPages { get { return Pages(Len(dishSprites), Len(dishSlots)); } }
-    int IngPages { get { return Pages(Len(ingredientSprites), Len(ingredientSlots)); } }
+    // ================================================================
+    // LEVEL DATA
+    // ================================================================
 
-    // ------------------------------------------------------------------ pages
+    void ApplyLevelData(int level)
+    {
+        int index = level - 1;
 
-    public void NextDishPage() { Step(true, 1); }
-    public void PrevDishPage() { Step(true, -1); }
-    public void NextIngredientPage() { Step(false, 1); }
-    public void PrevIngredientPage() { Step(false, -1); }
+        if (levels == null ||
+            index < 0 ||
+            index >= levels.Length ||
+            levels[index] == null)
+        {
+            Debug.LogWarning(
+                "FoodMenu: No menu data assigned for Level " + level
+            );
+
+            dishSprites = new Sprite[0];
+            dishNames = new string[0];
+            dishIconCrop = new Vector4[0];
+
+            ingredientSprites = new Sprite[0];
+            ingredientNames = new string[0];
+            ingredientIconCrop = new Vector4[0];
+
+            return;
+        }
+
+
+        FoodMenuLevelData data = levels[index];
+
+
+        // Copy only the selected level's data.
+        dishSprites = data.dishSprites ?? new Sprite[0];
+        dishNames = data.dishNames ?? new string[0];
+        dishIconCrop = data.dishIconCrop ?? new Vector4[0];
+
+        ingredientSprites =
+            data.ingredientSprites ?? new Sprite[0];
+
+        ingredientNames =
+            data.ingredientNames ?? new string[0];
+
+        ingredientIconCrop =
+            data.ingredientIconCrop ?? new Vector4[0];
+
+
+        Debug.Log(
+            "FoodMenu: Loaded Level " +
+            level +
+            " menu data. Dishes=" +
+            dishSprites.Length +
+            ", Ingredients=" +
+            ingredientSprites.Length
+        );
+    }
+
+
+    // ================================================================
+    // ARRAY HELPERS
+    // ================================================================
+
+    static int Len(System.Array a)
+    {
+        return a == null ? 0 : a.Length;
+    }
+
+
+    static int Pages(int items, int per)
+    {
+        if (items <= 0 || per <= 0)
+            return 0;
+
+        return (items + per - 1) / per;
+    }
+
+
+    int DishPages
+    {
+        get
+        {
+            return Pages(
+                Len(dishSprites),
+                Len(dishSlots)
+            );
+        }
+    }
+
+
+    int IngPages
+    {
+        get
+        {
+            return Pages(
+                Len(ingredientSprites),
+                Len(ingredientSlots)
+            );
+        }
+    }
+
+
+    // ================================================================
+    // ICON RECT CAPTURE
+    // ================================================================
+
+    static void CaptureIconRects(
+        Image[] slots,
+        out Vector2[] home,
+        out Vector2[] box
+    )
+    {
+        int n = Len(slots);
+
+        home = new Vector2[n];
+        box = new Vector2[n];
+
+
+        for (int i = 0; i < n; i++)
+        {
+            if (slots[i] == null)
+                continue;
+
+            RectTransform rt =
+                slots[i].rectTransform;
+
+            home[i] =
+                rt.anchoredPosition;
+
+            box[i] =
+                rt.sizeDelta;
+        }
+    }
+
+
+    // ================================================================
+    // BUTTON HOOK
+    // ================================================================
+
+    static void Hook(
+        Button b,
+        UnityEngine.Events.UnityAction a,
+        string name
+    )
+    {
+        if (b == null)
+        {
+            Debug.LogWarning(
+                "FoodMenu: " +
+                name +
+                " is not assigned."
+            );
+
+            return;
+        }
+
+
+        b.onClick.RemoveListener(a);
+        b.onClick.AddListener(a);
+    }
+
+
+    // ================================================================
+    // DISH PAGINATION
+    // ================================================================
+
+    public void NextDishPage()
+    {
+        Step(true, 1);
+    }
+
+
+    public void PrevDishPage()
+    {
+        Step(true, -1);
+    }
+
+
+    // ================================================================
+    // INGREDIENT PAGINATION
+    // ================================================================
+
+    public void NextIngredientPage()
+    {
+        Step(false, 1);
+    }
+
+
+    public void PrevIngredientPage()
+    {
+        Step(false, -1);
+    }
+
 
     void Step(bool dishes, int dir)
     {
-        int count = dishes ? DishPages : IngPages;
-        if (busy || count <= 1) return;
-        if (dishes) dishPage = Mathf.Clamp(dishPage + dir, 0, count - 1);
-        else ingPage = Mathf.Clamp(ingPage + dir, 0, count - 1);
-        StartCoroutine(FadeSwap(dishes));
+        int count =
+            dishes
+            ? DishPages
+            : IngPages;
+
+
+        if (busy || count <= 1)
+            return;
+
+
+        if (dishes)
+        {
+            dishPage =
+                Mathf.Clamp(
+                    dishPage + dir,
+                    0,
+                    count - 1
+                );
+        }
+        else
+        {
+            ingPage =
+                Mathf.Clamp(
+                    ingPage + dir,
+                    0,
+                    count - 1
+                );
+        }
+
+
+        StartCoroutine(
+            FadeSwap(dishes)
+        );
     }
+
+
+    // ================================================================
+    // PAGE FADE
+    // ================================================================
 
     IEnumerator FadeSwap(bool dishes)
     {
         busy = true;
-        Image[] slots = dishes ? dishSlots : ingredientSlots;
-        TMP_Text[] labels = dishes ? dishLabels : ingredientLabels;
-        yield return Fade(slots, labels, 1f, 0f);
-        if (dishes) RefreshDishes(); else RefreshIngredients();
-        yield return Fade(slots, labels, 0f, 1f);
+
+
+        Image[] slots =
+            dishes
+            ? dishSlots
+            : ingredientSlots;
+
+
+        TMP_Text[] labels =
+            dishes
+            ? dishLabels
+            : ingredientLabels;
+
+
+        yield return Fade(
+            slots,
+            labels,
+            1f,
+            0f
+        );
+
+
+        if (dishes)
+            RefreshDishes();
+        else
+            RefreshIngredients();
+
+
+        yield return Fade(
+            slots,
+            labels,
+            0f,
+            1f
+        );
+
+
         busy = false;
     }
 
-    IEnumerator Fade(Image[] slots, TMP_Text[] labels, float from, float to)
+
+    IEnumerator Fade(
+        Image[] slots,
+        TMP_Text[] labels,
+        float from,
+        float to
+    )
     {
         float t = 0f;
+
+
         while (t < pageFadeSeconds)
         {
             t += Time.unscaledDeltaTime;
-            SetAlpha(slots, labels, Mathf.Lerp(from, to, pageFadeSeconds <= 0f ? 1f : t / pageFadeSeconds));
+
+
+            float normalized =
+                pageFadeSeconds <= 0f
+                ? 1f
+                : t / pageFadeSeconds;
+
+
+            SetAlpha(
+                slots,
+                labels,
+                Mathf.Lerp(
+                    from,
+                    to,
+                    normalized
+                )
+            );
+
+
             yield return null;
         }
-        SetAlpha(slots, labels, to);
+
+
+        SetAlpha(
+            slots,
+            labels,
+            to
+        );
     }
 
-    static void SetAlpha(Image[] slots, TMP_Text[] labels, float a)
+
+    static void SetAlpha(
+        Image[] slots,
+        TMP_Text[] labels,
+        float a
+    )
     {
         for (int i = 0; i < Len(slots); i++)
         {
-            if (slots[i] == null) continue;
-            Color c = slots[i].color; c.a = a; slots[i].color = c;
+            if (slots[i] == null)
+                continue;
+
+
+            Color c =
+                slots[i].color;
+
+            c.a = a;
+
+            slots[i].color = c;
         }
+
+
         for (int i = 0; i < Len(labels); i++)
         {
-            if (labels[i] == null) continue;
-            Color c = labels[i].color; c.a = a; labels[i].color = c;
+            if (labels[i] == null)
+                continue;
+
+
+            Color c =
+                labels[i].color;
+
+            c.a = a;
+
+            labels[i].color = c;
         }
     }
+
+
+    // ================================================================
+    // REFRESH DISHES
+    // ================================================================
 
     public void RefreshDishes()
     {
-        Fill(dishSlots, dishLabels, dishSprites, dishNames, dishIconCrop,
-             dishIconHome, dishIconBox, dishPage);
-        if (dishPrevButton != null) dishPrevButton.interactable = dishPage > 0;
-        if (dishNextButton != null) dishNextButton.interactable = dishPage < DishPages - 1;
+        Fill(
+            dishSlots,
+            dishLabels,
+            dishSprites,
+            dishNames,
+            dishIconCrop,
+            dishIconHome,
+            dishIconBox,
+            dishPage
+        );
+
+
+        if (dishPrevButton != null)
+        {
+            dishPrevButton.interactable =
+                dishPage > 0;
+        }
+
+
+        if (dishNextButton != null)
+        {
+            dishNextButton.interactable =
+                dishPage < DishPages - 1;
+        }
     }
+
+
+    // ================================================================
+    // REFRESH INGREDIENTS
+    // ================================================================
 
     public void RefreshIngredients()
     {
-        Fill(ingredientSlots, ingredientLabels, ingredientSprites, ingredientNames,
-             ingredientIconCrop, ingIconHome, ingIconBox, ingPage);
-        if (ingredientPrevButton != null) ingredientPrevButton.interactable = ingPage > 0;
-        if (ingredientNextButton != null) ingredientNextButton.interactable = ingPage < IngPages - 1;
-    }
+        Fill(
+            ingredientSlots,
+            ingredientLabels,
+            ingredientSprites,
+            ingredientNames,
+            ingredientIconCrop,
+            ingIconHome,
+            ingIconBox,
+            ingPage
+        );
 
-    static void Fill(Image[] slots, TMP_Text[] labels, Sprite[] sprites, string[] names,
-                     Vector4[] crops, Vector2[] home, Vector2[] box, int page)
-    {
-        int per = Len(slots);
-        for (int i = 0; i < per; i++)
+
+        if (ingredientPrevButton != null)
         {
-            int index = page * per + i;
-            bool has = index < Len(sprites) && sprites[index] != null;
-            if (slots[i] != null)
-            {
-                slots[i].sprite = has ? sprites[index] : null;
-                slots[i].enabled = has;
-                if (has && i < Len(home))
-                {
-                    Vector4 crop = index < Len(crops) ? crops[index] : Vector4.zero;
-                    FitIcon(slots[i], box[i], home[i], crop);
-                }
-            }
-            if (i < Len(labels) && labels[i] != null)
-                labels[i].text = (has && index < Len(names)) ? names[index] : "";
+            ingredientPrevButton.interactable =
+                ingPage > 0;
+        }
+
+
+        if (ingredientNextButton != null)
+        {
+            ingredientNextButton.interactable =
+                ingPage < IngPages - 1;
         }
     }
 
-    /// <summary>
-    /// Sizes and positions an icon so its VISIBLE pixels are centred in, and fill,
-    /// the authored icon box. Several source PNGs have their food off-centre on a
-    /// large transparent canvas; plain preserveAspect would centre the canvas and
-    /// leave the food looking shifted and undersized. Falls back to preserveAspect
-    /// when no crop data is supplied.
-    /// </summary>
-    static void FitIcon(Image img, Vector2 box, Vector2 home, Vector4 crop)
-    {
-        RectTransform rt = img.rectTransform;
-        Sprite sp = img.sprite;
-        float vw = sp == null ? 0f : sp.rect.width * crop.z;
-        float vh = sp == null ? 0f : sp.rect.height * crop.w;
 
-        if (vw <= 0f || vh <= 0f)          // no crop data - behave as before
+    // ================================================================
+    // FILL SHELF
+    // ================================================================
+
+    static void Fill(
+        Image[] slots,
+        TMP_Text[] labels,
+        Sprite[] sprites,
+        string[] names,
+        Vector4[] crops,
+        Vector2[] home,
+        Vector2[] box,
+        int page
+    )
+    {
+        int per =
+            Len(slots);
+
+
+        for (int i = 0; i < per; i++)
+        {
+            int index =
+                page * per + i;
+
+
+            bool has =
+                index < Len(sprites) &&
+                sprites[index] != null;
+
+
+            // --------------------------------------------------------
+            // CARD
+            // Hide the whole card (background + icon + label) when the
+            // slot is empty, so no blank box is left on the shelf.
+            // --------------------------------------------------------
+
+            GameObject card =
+                CardRoot(
+                    slots[i],
+                    i < Len(labels) ? labels[i] : null
+                );
+
+            if (card != null &&
+                card.activeSelf != has)
+            {
+                card.SetActive(has);
+            }
+
+
+            // --------------------------------------------------------
+            // IMAGE
+            // --------------------------------------------------------
+
+            if (slots[i] != null)
+            {
+                slots[i].sprite =
+                    has
+                    ? sprites[index]
+                    : null;
+
+
+                slots[i].enabled =
+                    has;
+
+
+                if (has &&
+                    i < Len(home) &&
+                    i < Len(box))
+                {
+                    Vector4 crop =
+                        index < Len(crops)
+                        ? crops[index]
+                        : Vector4.zero;
+
+
+                    FitIcon(
+                        slots[i],
+                        box[i],
+                        home[i],
+                        crop
+                    );
+                }
+            }
+
+
+            // --------------------------------------------------------
+            // LABEL
+            // --------------------------------------------------------
+
+            if (i < Len(labels) &&
+                labels[i] != null)
+            {
+                labels[i].text =
+                    (
+                        has &&
+                        index < Len(names)
+                    )
+                    ? names[index]
+                    : "";
+            }
+        }
+    }
+
+
+    /// <summary>
+    /// The card container for a slot: the Icon's parent (ItemN), which
+    /// holds the card background, the Icon and the Label. Only used when
+    /// the label shares that parent, so a whole section is never hidden.
+    /// </summary>
+    static GameObject CardRoot(
+        Image slot,
+        TMP_Text label
+    )
+    {
+        if (slot == null)
+            return null;
+
+
+        Transform parent =
+            slot.transform.parent;
+
+
+        if (parent != null &&
+            label != null &&
+            label.transform.parent == parent)
+        {
+            return parent.gameObject;
+        }
+
+
+        return slot.gameObject;
+    }
+
+
+    // ================================================================
+    // ICON FITTING
+    // ================================================================
+
+    static void FitIcon(
+        Image img,
+        Vector2 box,
+        Vector2 home,
+        Vector4 crop
+    )
+    {
+        RectTransform rt =
+            img.rectTransform;
+
+
+        Sprite sp =
+            img.sprite;
+
+
+        float vw =
+            sp == null
+            ? 0f
+            : sp.rect.width * crop.z;
+
+
+        float vh =
+            sp == null
+            ? 0f
+            : sp.rect.height * crop.w;
+
+
+        // No crop data
+        if (vw <= 0f || vh <= 0f)
         {
             img.preserveAspect = true;
+
             rt.sizeDelta = box;
+
             rt.anchoredPosition = home;
+
             return;
         }
 
-        float s = Mathf.Min(box.x / vw, box.y / vh);
+
+        float s =
+            Mathf.Min(
+                box.x / vw,
+                box.y / vh
+            );
+
+
         img.preserveAspect = false;
-        rt.sizeDelta = new Vector2(sp.rect.width * s, sp.rect.height * s);
-        rt.anchoredPosition = home - new Vector2(crop.x * sp.rect.width * s,
-                                                 crop.y * sp.rect.height * s);
+
+
+        rt.sizeDelta =
+            new Vector2(
+                sp.rect.width * s,
+                sp.rect.height * s
+            );
+
+
+        rt.anchoredPosition =
+            home -
+            new Vector2(
+                crop.x *
+                sp.rect.width *
+                s,
+
+                crop.y *
+                sp.rect.height *
+                s
+            );
     }
 
-    // ----------------------------------------------------------------- levels
+
+    // ================================================================
+    // LEVEL SELECTION
+    // ================================================================
 
     public void SelectLevel(int level)
     {
         if (!LevelProgress.IsUnlocked(level))
         {
-            Debug.Log("FoodMenu: level " + level + " is locked.");
+            Debug.Log(
+                "FoodMenu: Level " +
+                level +
+                " is locked."
+            );
+
             return;
         }
-        selectedLevel = level;
-        LevelProgress.SelectedLevel = level;
+
+
+        selectedLevel =
+            level;
+
+
+        LevelProgress.SelectedLevel =
+            level;
+
+
+        // IMPORTANT:
+        // Every level starts its menu from page 1.
+        dishPage = 0;
+        ingPage = 0;
+
+
+        // Load ONLY this level's dishes and ingredients.
+        ApplyLevelData(level);
+
+
+        RefreshDishes();
+        RefreshIngredients();
         RefreshLevels();
-        if (level - 1 < Len(levelButtons) && levelButtons[level - 1] != null)
-            StartCoroutine(Pulse(levelButtons[level - 1].transform));
+
+
+        if (
+            level - 1 <
+            Len(levelButtons)
+            &&
+            levelButtons[level - 1] != null
+        )
+        {
+            StartCoroutine(
+                Pulse(
+                    levelButtons[level - 1].transform
+                )
+            );
+        }
     }
+
+
+    // ================================================================
+    // REFRESH LEVEL BUTTONS
+    // ================================================================
 
     public void RefreshLevels()
     {
-        if (!LevelProgress.IsUnlocked(selectedLevel)) selectedLevel = LevelProgress.HighestUnlocked();
-
-        for (int i = 0; i < LevelProgress.LevelCount; i++)
+        if (!LevelProgress.IsUnlocked(selectedLevel))
         {
-            int level = i + 1;
-            bool unlocked = LevelProgress.IsUnlocked(level);
+            selectedLevel =
+                LevelProgress.HighestUnlocked();
 
-            if (i < Len(levelButtons) && levelButtons[i] != null)
-                levelButtons[i].interactable = unlocked;
+            ApplyLevelData(
+                selectedLevel
+            );
 
-            // Padlock state, not a tick: locked levels show a closed padlock,
-            // unlocked (including completed, replayable) levels show an open one.
-            if (i < Len(lockIcons) && lockIcons[i] != null)
-                lockIcons[i].SetActive(!unlocked);
+            dishPage = 0;
+            ingPage = 0;
 
-            if (i < Len(completedIcons) && completedIcons[i] != null)
-                completedIcons[i].SetActive(unlocked);
-
-            if (i < Len(selectionHighlights) && selectionHighlights[i] != null)
-                selectionHighlights[i].SetActive(unlocked && level == selectedLevel);
-
-            if (i < Len(levelBands) && levelBands[i] != null)
-            {
-                Color c = LevelTint[i];
-                if (!unlocked) c = new Color(c.r * 0.5f, c.g * 0.5f, c.b * 0.5f, 1f);
-                levelBands[i].color = c;
-            }
-
-            if (i < Len(levelThumbnails) && levelThumbnails[i] != null)
-                levelThumbnails[i].color = unlocked ? Color.white : new Color(0.45f, 0.45f, 0.48f, 1f);
+            RefreshDishes();
+            RefreshIngredients();
         }
 
-        if (playButton != null) playButton.interactable = LevelProgress.IsUnlocked(selectedLevel);
-        if (chefBinder != null) chefBinder.Apply(selectedLevel);
+
+        for (
+            int i = 0;
+            i < LevelProgress.LevelCount;
+            i++
+        )
+        {
+            int level =
+                i + 1;
+
+
+            bool unlocked =
+                LevelProgress.IsUnlocked(level);
+
+
+            // --------------------------------------------------------
+            // BUTTON
+            // --------------------------------------------------------
+
+            if (
+                i < Len(levelButtons)
+                &&
+                levelButtons[i] != null
+            )
+            {
+                levelButtons[i].interactable =
+                    unlocked;
+            }
+
+
+            // --------------------------------------------------------
+            // LOCK
+            // --------------------------------------------------------
+
+            if (
+                i < Len(lockIcons)
+                &&
+                lockIcons[i] != null
+            )
+            {
+                lockIcons[i].SetActive(
+                    !unlocked
+                );
+            }
+
+
+            // --------------------------------------------------------
+            // UNLOCKED ICON
+            // --------------------------------------------------------
+
+            if (
+                i < Len(completedIcons)
+                &&
+                completedIcons[i] != null
+            )
+            {
+                completedIcons[i].SetActive(
+                    unlocked
+                );
+            }
+
+
+            // --------------------------------------------------------
+            // SELECTION HIGHLIGHT
+            // --------------------------------------------------------
+
+            if (
+                i < Len(selectionHighlights)
+                &&
+                selectionHighlights[i] != null
+            )
+            {
+                selectionHighlights[i].SetActive(
+                    unlocked &&
+                    level == selectedLevel
+                );
+            }
+
+
+            // --------------------------------------------------------
+            // LEVEL BAND
+            // --------------------------------------------------------
+
+            if (
+                i < Len(levelBands)
+                &&
+                levelBands[i] != null
+            )
+            {
+                Color c =
+                    LevelTint[
+                        Mathf.Clamp(
+                            i,
+                            0,
+                            LevelTint.Length - 1
+                        )
+                    ];
+
+
+                if (!unlocked)
+                {
+                    c =
+                        new Color(
+                            c.r * 0.5f,
+                            c.g * 0.5f,
+                            c.b * 0.5f,
+                            1f
+                        );
+                }
+
+
+                levelBands[i].color =
+                    c;
+            }
+
+
+            // --------------------------------------------------------
+            // THUMBNAIL
+            // --------------------------------------------------------
+
+            if (
+                i < Len(levelThumbnails)
+                &&
+                levelThumbnails[i] != null
+            )
+            {
+                levelThumbnails[i].color =
+                    unlocked
+                    ? Color.white
+                    : new Color(
+                        0.45f,
+                        0.45f,
+                        0.48f,
+                        1f
+                    );
+            }
+        }
+
+
+        // ------------------------------------------------------------
+        // PLAY BUTTON
+        // ------------------------------------------------------------
+
+        if (playButton != null)
+        {
+            playButton.interactable =
+                LevelProgress.IsUnlocked(
+                    selectedLevel
+                );
+        }
+
+
+        // ------------------------------------------------------------
+        // CHEF
+        // ------------------------------------------------------------
+
+        if (chefBinder != null)
+        {
+            chefBinder.Apply(
+                selectedLevel
+            );
+        }
     }
+
+
+    // ================================================================
+    // PULSE
+    // ================================================================
 
     IEnumerator Pulse(Transform t)
     {
-        float d = 0.14f, e = 0f;
+        float d = 0.14f;
+        float e = 0f;
+
+
         while (e < d)
         {
-            e += Time.unscaledDeltaTime;
-            t.localScale = Vector3.one * (1f + 0.06f * Mathf.Sin(Mathf.PI * e / d));
+            e +=
+                Time.unscaledDeltaTime;
+
+
+            t.localScale =
+                Vector3.one *
+                (
+                    1f +
+                    0.06f *
+                    Mathf.Sin(
+                        Mathf.PI *
+                        e /
+                        d
+                    )
+                );
+
+
             yield return null;
         }
-        t.localScale = Vector3.one;
+
+
+        t.localScale =
+            Vector3.one;
     }
 
-    /// <summary>Loads the story scene for the selected level. Never skips the story.</summary>
+
+    // ================================================================
+    // PLAY SELECTED LEVEL
+    // ================================================================
+
     public void PlaySelected()
     {
-        int level = LevelProgress.IsUnlocked(selectedLevel) ? selectedLevel : 1;
-        string scene = LevelProgress.StorySceneFor(level);
-        Debug.Log("FoodMenu: PLAY level " + level + " -> " + scene);
-        SceneManager.LoadScene(scene);
+        int level =
+            LevelProgress.IsUnlocked(
+                selectedLevel
+            )
+            ? selectedLevel
+            : 1;
+
+
+        string scene =
+            LevelProgress.StorySceneFor(
+                level
+            );
+
+
+        Debug.Log(
+            "FoodMenu: PLAY level " +
+            level +
+            " -> " +
+            scene
+        );
+
+
+        SceneManager.LoadScene(
+            scene
+        );
     }
 }

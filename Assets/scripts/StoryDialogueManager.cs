@@ -23,8 +23,8 @@ public class StoryDialogueManager : MonoBehaviour
         "Welcome to Tanzania!",
         "Tanzania is a country rich in culture and traditional foods.",
         "In this first level, you will prepare two traditional Tanzanian meals.",
-        "First, we have Ugali with Tembele.",
-        "And then, Ugali with Dagaa.",
+        "First, we have Ugali with Potato Leaves.",
+        "And then, Ugali with Anchovies.",
         "Are you ready to discover the taste of Tanzania?",
         "Let's start cooking!"
     };

@@ -130,11 +130,15 @@ public class VegCookingManager : MonoBehaviour
 
         flameIcon?.SetActive(false);
 
-        oilRaw?.SetActive(false);
-        onionRaw?.SetActive(false);
-        tomatoRaw?.SetActive(false);
-        dagaaRaw?.SetActive(false);
-        tembeleRaw?.SetActive(false);
+        // Raw ingredients stay on the table, like Level Two / Three. The step
+        // checks in the Click* methods still decide which click is accepted.
+        // The oil stays LOCKED (no clicks, no hand) until the order is chosen
+        // -- before, being hidden was what kept it out of reach.
+        ShowOnTable(oilRaw, false);
+        ShowOnTable(onionRaw, true);
+        ShowOnTable(tomatoRaw, true);
+        ShowOnTable(dagaaRaw, true);
+        ShowOnTable(tembeleRaw, true);
 
         oilCook?.SetActive(false);
         onionCook?.SetActive(false);
@@ -184,12 +188,8 @@ public class VegCookingManager : MonoBehaviour
 
     void ResetPanIngredients()
     {
-        oilRaw?.SetActive(false);
-        onionRaw?.SetActive(false);
-        tomatoRaw?.SetActive(false);
-        dagaaRaw?.SetActive(false);
-        tembeleRaw?.SetActive(false);
-
+        // Only the pan is cleared. Raw ingredients that were used are already
+        // gone from the table; the unused ones stay visible.
         oilCook?.SetActive(false);
         onionCook?.SetActive(false);
         tomatoCook?.SetActive(false);
@@ -418,10 +418,11 @@ public class VegCookingManager : MonoBehaviour
 
         if (menuManager != null)
         {
+            // The other recipe's ingredient stays on the table; ClickDagaa /
+            // ClickTembele already refuse the one that was not ordered.
             if (menuManager.selectedFood == 0)
             {
                 dagaaRaw.SetActive(true);
-                tembeleRaw.SetActive(false);
             }
             else if (
                 menuManager.selectedFood == 1 ||
@@ -429,7 +430,6 @@ public class VegCookingManager : MonoBehaviour
             )
             {
                 tembeleRaw.SetActive(true);
-                dagaaRaw.SetActive(false);
             }
         }
 
@@ -911,9 +911,12 @@ public class VegCookingManager : MonoBehaviour
                 return;
         }
 
+        // Visible is not enough: a LOCKED ingredient (the oil before the order
+        // is chosen) gets no hand, exactly as when it used to be hidden.
         if (
             target != null &&
-            target.activeInHierarchy
+            target.activeInHierarchy &&
+            IsUsable(target)
         )
         {
             handCursor.SetActive(true);
@@ -921,5 +924,30 @@ public class VegCookingManager : MonoBehaviour
             handCursor.transform.position =
                 target.transform.position;
         }
+    }
+
+    // =========================================================
+    // TABLE VISIBILITY vs USABILITY
+    // =========================================================
+
+    /// <summary>Visible on the table; clickable only when usable.</summary>
+    void ShowOnTable(GameObject ingredient, bool usable)
+    {
+        if (ingredient == null)
+            return;
+
+        ingredient.SetActive(true);
+
+        Collider2D col = ingredient.GetComponent<Collider2D>();
+
+        if (col != null)
+            col.enabled = usable;
+    }
+
+    bool IsUsable(GameObject ingredient)
+    {
+        Collider2D col = ingredient.GetComponent<Collider2D>();
+
+        return col == null || col.enabled;
     }
 }

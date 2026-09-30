@@ -747,7 +747,7 @@ MonoBehaviour:
   chefAnimator: {fileID: 1251602978}
   celebrationSound: {fileID: 8300000, guid: 0c841dbd779f69b42ba41e3009e2f838, type: 3}
   isLevelOneComplete: 0
-  nextSceneOverride: Main menu
+  nextSceneOverride: Morocco Story
 --- !u!1 &2026148633
 GameObject:
   m_ObjectHideFlags: 0

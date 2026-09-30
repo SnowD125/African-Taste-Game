@@ -323,8 +323,7 @@ GameObject:
   - component: {fileID: 46703021}
   - component: {fileID: 46703020}
   - component: {fileID: 46703022}
-  - component: {fileID: 46703023}
-  - component: {fileID: 46703024}
+  - component: {fileID: 1900000014}
   m_Layer: 0
   m_Name: onions
   m_TagString: Untagged
@@ -448,34 +447,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.11, y: 3.68}
   m_EdgeRadius: 0
---- !u!114 &46703023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46703019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66fce6beb8bee6a49b78167415a8ffb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 1
-  jollofManager: {fileID: 0}
---- !u!114 &46703024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46703019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df98fae2258940646a3d7ae396720be3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 1
-  egusiManager: {fileID: 0}
 --- !u!1 &111352311
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +682,7 @@ GameObject:
   - component: {fileID: 183607647}
   - component: {fileID: 183607646}
   - component: {fileID: 183607645}
+  - component: {fileID: 1900000024}
   m_Layer: 0
   m_Name: Banku_0
   m_TagString: Untagged
@@ -932,7 +904,7 @@ GameObject:
   - component: {fileID: 232430256}
   - component: {fileID: 232430255}
   - component: {fileID: 232430257}
-  - component: {fileID: 232430258}
+  - component: {fileID: 1900000013}
   m_Layer: 0
   m_Name: tomatos
   m_TagString: Untagged
@@ -1056,20 +1028,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.04, y: 4.48}
   m_EdgeRadius: 0
---- !u!114 &232430258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232430254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66fce6beb8bee6a49b78167415a8ffb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 0
-  jollofManager: {fileID: 0}
 --- !u!1 &239116079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,8 +1038,8 @@ GameObject:
   m_Component:
   - component: {fileID: 239116081}
   - component: {fileID: 239116080}
-  - component: {fileID: 239116083}
   - component: {fileID: 239116082}
+  - component: {fileID: 1900000018}
   m_Layer: 0
   m_Name: Cassavaplantainready
   m_TagString: Untagged
@@ -1205,19 +1163,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 6.12, y: 4.08}
   m_EdgeRadius: 0
---- !u!114 &239116083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239116079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17caecd2f79663244afdb1c6c5c49b6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poundedYamManager: {fileID: 0}
 --- !u!1 &265463642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,6 +1371,7 @@ GameObject:
   - component: {fileID: 314720129}
   - component: {fileID: 314720128}
   - component: {fileID: 314720132}
+  - component: {fileID: 1900000017}
   m_Layer: 0
   m_Name: boilingwater_0
   m_TagString: Untagged
@@ -1868,8 +1814,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.323, y: 0}
-  m_SizeDelta: {x: 106.061, y: 16.263}
+  m_AnchoredPosition: {x: 12.3, y: 0}
+  m_SizeDelta: {x: 96, y: 16.263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497843459
 MonoBehaviour:
@@ -1900,8 +1846,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4292473599
+  m_fontColor: {r: 1, g: 0.9490196, b: 0.8509804, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1921,9 +1867,9 @@ MonoBehaviour:
   m_fontSize: 12.727
   m_fontSizeBase: 12.727
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 10.5
+  m_fontSizeMax: 12.727
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -2333,8 +2279,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.323, y: 0}
-  m_SizeDelta: {x: 106.061, y: 16.263}
+  m_AnchoredPosition: {x: 12.3, y: 0}
+  m_SizeDelta: {x: 96, y: 16.263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &545359939
 MonoBehaviour:
@@ -2365,8 +2311,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4292473599
+  m_fontColor: {r: 1, g: 0.9490196, b: 0.8509804, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2386,9 +2332,9 @@ MonoBehaviour:
   m_fontSize: 12.727
   m_fontSizeBase: 12.727
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 10.5
+  m_fontSizeMax: 12.727
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -2400,7 +2346,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -3094,7 +3040,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665454916}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -3124,8 +3070,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.6, y: 2.53}
+    pivot: {x: 0.5, y: 0.017316}
+    oldSize: {x: 1.38, y: 2.31}
     newSize: {x: 0.76, y: 2.33}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3504,6 +3450,7 @@ GameObject:
   - component: {fileID: 772521411}
   - component: {fileID: 772521410}
   - component: {fileID: 772521409}
+  - component: {fileID: 1900000028}
   m_Layer: 0
   m_Name: LightSoup
   m_TagString: Untagged
@@ -3850,7 +3797,7 @@ GameObject:
   - component: {fileID: 784211183}
   - component: {fileID: 784211182}
   - component: {fileID: 784211186}
-  - component: {fileID: 784211187}
+  - component: {fileID: 1900000026}
   m_Layer: 0
   m_Name: plate2
   m_TagString: Untagged
@@ -3974,20 +3921,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.71, y: 1.17}
   m_EdgeRadius: 0
---- !u!114 &784211187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784211181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b157c638b02cf784aba417eb92725256, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poundedYamManager: {fileID: 0}
-  customerMenuManager: {fileID: 1791396014}
 --- !u!1 &805842739
 GameObject:
   m_ObjectHideFlags: 0
@@ -4098,8 +4031,8 @@ GameObject:
   m_Component:
   - component: {fileID: 811111753}
   - component: {fileID: 811111752}
-  - component: {fileID: 811111755}
   - component: {fileID: 811111754}
+  - component: {fileID: 1900000006}
   m_Layer: 0
   m_Name: corn dough
   m_TagString: Untagged
@@ -4223,20 +4156,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5, y: 5}
   m_EdgeRadius: 0
---- !u!114 &811111755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811111751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df98fae2258940646a3d7ae396720be3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 4
-  egusiManager: {fileID: 0}
 --- !u!1 &838159087
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,8 +4276,8 @@ GameObject:
   m_Component:
   - component: {fileID: 864816434}
   - component: {fileID: 864816433}
-  - component: {fileID: 864816435}
   - component: {fileID: 864816436}
+  - component: {fileID: 1900000003}
   m_Layer: 0
   m_Name: Rice
   m_TagString: Untagged
@@ -4436,20 +4355,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &864816435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864816432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66fce6beb8bee6a49b78167415a8ffb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 9
-  jollofManager: {fileID: 0}
 --- !u!61 &864816436
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4688,7 +4593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.086, g: 0.184, b: 0.235, a: 0.55}
+  m_Color: {r: 0.086, g: 0.184, b: 0.235, a: 0.72}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4770,7 +4675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2093668979459322805, guid: e2c7949428df17b44b6c7441e25e2471, type: 3}
+  m_Sprite: {fileID: -2992321357941825992, guid: d6e885f61408cd0408f4a30b136bf5a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4838,7 +4743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.086, g: 0.184, b: 0.235, a: 0.55}
+  m_Color: {r: 0.086, g: 0.184, b: 0.235, a: 0.72}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4988,7 +4893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.086, g: 0.184, b: 0.235, a: 0.55}
+  m_Color: {r: 0.086, g: 0.184, b: 0.235, a: 0.72}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5766,7 +5671,7 @@ GameObject:
   - component: {fileID: 980147396}
   - component: {fileID: 980147395}
   - component: {fileID: 980147397}
-  - component: {fileID: 980147398}
+  - component: {fileID: 1900000004}
   m_Layer: 0
   m_Name: beans
   m_TagString: Untagged
@@ -5890,20 +5795,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5, y: 5}
   m_EdgeRadius: 0
---- !u!114 &980147398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980147394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df98fae2258940646a3d7ae396720be3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 2
-  egusiManager: {fileID: 0}
 --- !u!1 &1062651527
 GameObject:
   m_ObjectHideFlags: 0
@@ -5915,6 +5806,7 @@ GameObject:
   - component: {fileID: 1062651529}
   - component: {fileID: 1062651528}
   - component: {fileID: 1062651530}
+  - component: {fileID: 1900000011}
   m_Layer: 0
   m_Name: plantain
   m_TagString: Untagged
@@ -6072,8 +5964,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.323, y: 0}
-  m_SizeDelta: {x: 106.061, y: 16.263}
+  m_AnchoredPosition: {x: 12.3, y: 0}
+  m_SizeDelta: {x: 96, y: 16.263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1083260620
 MonoBehaviour:
@@ -6104,8 +5996,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4292473599
+  m_fontColor: {r: 1, g: 0.9490196, b: 0.8509804, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6122,12 +6014,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.727
-  m_fontSizeBase: 11.727
+  m_fontSize: 12.05
+  m_fontSizeBase: 12.727
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 10.5
+  m_fontSizeMax: 12.727
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -6139,7 +6031,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -6421,8 +6313,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1125675311}
   - component: {fileID: 1125675310}
-  - component: {fileID: 1125675312}
   - component: {fileID: 1125675313}
+  - component: {fileID: 1900000007}
   m_Layer: 0
   m_Name: cassava dough
   m_TagString: Untagged
@@ -6500,20 +6392,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1125675312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1125675309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66fce6beb8bee6a49b78167415a8ffb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 3
-  jollofManager: {fileID: 0}
 --- !u!61 &1125675313
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6570,8 +6448,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1176574522}
   - component: {fileID: 1176574521}
-  - component: {fileID: 1176574524}
   - component: {fileID: 1176574523}
+  - component: {fileID: 1900000020}
   m_Layer: 0
   m_Name: Cooked Tilapia
   m_TagString: Untagged
@@ -6695,20 +6573,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.77, y: 4.33}
   m_EdgeRadius: 0
---- !u!114 &1176574524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176574520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b157c638b02cf784aba417eb92725256, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poundedYamManager: {fileID: 0}
-  customerMenuManager: {fileID: 0}
 --- !u!1 &1193596181
 GameObject:
   m_ObjectHideFlags: 0
@@ -6750,8 +6614,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1200243885}
   - component: {fileID: 1200243884}
-  - component: {fileID: 1200243887}
   - component: {fileID: 1200243886}
+  - component: {fileID: 1900000005}
   m_Layer: 0
   m_Name: Salt
   m_TagString: Untagged
@@ -6875,20 +6739,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.08, y: 1.85}
   m_EdgeRadius: 0
---- !u!114 &1200243887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200243883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df98fae2258940646a3d7ae396720be3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 5
-  egusiManager: {fileID: 0}
 --- !u!1 &1204244305
 GameObject:
   m_ObjectHideFlags: 0
@@ -7008,7 +6858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1248630179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7238,9 +7088,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1281154966}
   - component: {fileID: 1281154965}
-  - component: {fileID: 1281154967}
   - component: {fileID: 1281154968}
-  - component: {fileID: 1281154969}
+  - component: {fileID: 1900000012}
   m_Layer: 0
   m_Name: Raw_meat
   m_TagString: Untagged
@@ -7318,20 +7167,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1281154967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281154964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66fce6beb8bee6a49b78167415a8ffb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 8
-  jollofManager: {fileID: 0}
 --- !u!61 &1281154968
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7378,20 +7213,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 6.12, y: 4.08}
   m_EdgeRadius: 0
---- !u!114 &1281154969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281154964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df98fae2258940646a3d7ae396720be3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 3
-  egusiManager: {fileID: 0}
 --- !u!1 &1299765454
 GameObject:
   m_ObjectHideFlags: 0
@@ -7402,8 +7223,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1299765456}
   - component: {fileID: 1299765455}
-  - component: {fileID: 1299765458}
   - component: {fileID: 1299765457}
+  - component: {fileID: 1900000021}
   m_Layer: 0
   m_Name: Ready pounded
   m_TagString: Untagged
@@ -7527,19 +7348,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.77, y: 4.33}
   m_EdgeRadius: 0
---- !u!114 &1299765458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299765454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c81eb44c7431c04fbd1f620958627a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poundedYamManager: {fileID: 0}
 --- !u!1 &1334505235
 GameObject:
   m_ObjectHideFlags: 0
@@ -7551,6 +7359,7 @@ GameObject:
   - component: {fileID: 1334505238}
   - component: {fileID: 1334505237}
   - component: {fileID: 1334505236}
+  - component: {fileID: 1900000019}
   m_Layer: 0
   m_Name: Fish grill_0
   m_TagString: Untagged
@@ -7760,7 +7569,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1482207242}
         m_TargetAssemblyTypeName: CustomerMenuManager3, Assembly-CSharp
-        m_MethodName: SelectBankuTilapia
+        m_MethodName: SelectFufuLightSoup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7819,6 +7628,7 @@ GameObject:
   - component: {fileID: 1453509371}
   - component: {fileID: 1453509370}
   - component: {fileID: 1453509372}
+  - component: {fileID: 1900000009}
   m_Layer: 0
   m_Name: ginger
   m_TagString: Untagged
@@ -7952,9 +7762,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1474643652}
   - component: {fileID: 1474643651}
-  - component: {fileID: 1474643653}
-  - component: {fileID: 1474643655}
   - component: {fileID: 1474643654}
+  - component: {fileID: 1900000010}
   m_Layer: 0
   m_Name: cassava
   m_TagString: Untagged
@@ -8032,20 +7841,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1474643653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474643650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66fce6beb8bee6a49b78167415a8ffb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 0
-  jollofManager: {fileID: 0}
 --- !u!61 &1474643654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8092,19 +7887,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5, y: 5}
   m_EdgeRadius: 0
---- !u!114 &1474643655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474643650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e85af294797e5024d9db6022a9b3b3a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poundedYamManager: {fileID: 0}
 --- !u!1 &1482207241
 GameObject:
   m_ObjectHideFlags: 0
@@ -8466,7 +8248,7 @@ GameObject:
   - component: {fileID: 1558137830}
   - component: {fileID: 1558137829}
   - component: {fileID: 1558137832}
-  - component: {fileID: 1558137833}
+  - component: {fileID: 1900000023}
   m_Layer: 0
   m_Name: plate1
   m_TagString: Untagged
@@ -8591,19 +8373,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.71, y: 1.17}
   m_EdgeRadius: 0
---- !u!114 &1558137833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558137828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a704394a1c01b694bb8b12438ab900ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jollofManager: {fileID: 0}
 --- !u!1 &1560542001
 GameObject:
   m_ObjectHideFlags: 0
@@ -8615,7 +8384,7 @@ GameObject:
   - component: {fileID: 1560542003}
   - component: {fileID: 1560542002}
   - component: {fileID: 1560542005}
-  - component: {fileID: 1560542006}
+  - component: {fileID: 1900000022}
   m_Layer: 0
   m_Name: Soup Pan
   m_TagString: Untagged
@@ -8741,18 +8510,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 6.21, y: 4.02}
   m_EdgeRadius: 0
---- !u!114 &1560542006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560542001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 568c970d14528b34a8dd492f08bc19b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1573578318
 GameObject:
   m_ObjectHideFlags: 0
@@ -8975,8 +8732,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1606680669}
   - component: {fileID: 1606680668}
-  - component: {fileID: 1606680670}
   - component: {fileID: 1606680671}
+  - component: {fileID: 1900000015}
   m_Layer: 0
   m_Name: Pepper
   m_TagString: Untagged
@@ -9054,20 +8811,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1606680670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606680667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66fce6beb8bee6a49b78167415a8ffb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredientType: 2
-  jollofManager: {fileID: 0}
 --- !u!61 &1606680671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9125,6 +8868,7 @@ GameObject:
   - component: {fileID: 1607828377}
   - component: {fileID: 1607828376}
   - component: {fileID: 1607828379}
+  - component: {fileID: 1900000027}
   m_Layer: 0
   m_Name: Fufu
   m_TagString: Untagged
@@ -9808,6 +9552,7 @@ GameObject:
   - component: {fileID: 1690797438}
   - component: {fileID: 1690797437}
   - component: {fileID: 1690797436}
+  - component: {fileID: 1900000016}
   m_Layer: 0
   m_Name: Waakye Pot_0
   m_TagString: Untagged
@@ -10349,7 +10094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1727022084
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10417,6 +10162,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1762631391}
   - component: {fileID: 1762631390}
+  - component: {fileID: 1900000008}
+  - component: {fileID: 1900000029}
   m_Layer: 0
   m_Name: Raw_tilapia_0
   m_TagString: Untagged
@@ -11110,6 +10857,7 @@ GameObject:
   - component: {fileID: 1861429537}
   - component: {fileID: 1861429536}
   - component: {fileID: 1861429535}
+  - component: {fileID: 1900000025}
   m_Layer: 0
   m_Name: ReadyTilapia
   m_TagString: Untagged
@@ -11350,7 +11098,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1482207242}
         m_TargetAssemblyTypeName: CustomerMenuManager3, Assembly-CSharp
-        m_MethodName: SelectFufuLightSoup
+        m_MethodName: SelectBankuTilapia
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11398,6 +11146,525 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898798738}
   m_CullTransparentMesh: 1
+--- !u!1 &1900000000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900000001}
+  - component: {fileID: 1900000002}
+  m_Layer: 0
+  m_Name: Level3CookingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1900000001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900000000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900000000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14276ecfb012b173c87e1a230ce92573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuManager: {fileID: 1482207242}
+  handCursor: {fileID: 2051179565}
+  rice: {fileID: 864816432}
+  beans: {fileID: 980147394}
+  salt: {fileID: 1200243883}
+  cornDough: {fileID: 811111751}
+  cassavaDough: {fileID: 1125675309}
+  rawTilapia: {fileID: 1762631389}
+  ginger: {fileID: 1453509369}
+  cassava: {fileID: 1474643650}
+  plantain: {fileID: 1062651527}
+  meat: {fileID: 1281154964}
+  tomato: {fileID: 232430254}
+  onion: {fileID: 46703019}
+  pepper: {fileID: 1606680667}
+  waakyePot: {fileID: 1690797437}
+  waakyeCookingFrames:
+  - {fileID: 7922561637140443648, guid: fe99323ac4a25ea4d89ab05a671534c5, type: 3}
+  - {fileID: 5060176151846171365, guid: fe99323ac4a25ea4d89ab05a671534c5, type: 3}
+  - {fileID: 4335573367284073111, guid: fe99323ac4a25ea4d89ab05a671534c5, type: 3}
+  - {fileID: -6423661061215756033, guid: fe99323ac4a25ea4d89ab05a671534c5, type: 3}
+  - {fileID: -4067630438964879256, guid: fe99323ac4a25ea4d89ab05a671534c5, type: 3}
+  - {fileID: 5182244052690983474, guid: fe99323ac4a25ea4d89ab05a671534c5, type: 3}
+  waakyeReadySprite: {fileID: 2093668979459322805, guid: e2c7949428df17b44b6c7441e25e2471, type: 3}
+  boilingPot: {fileID: 314720129}
+  bankuCooking: {fileID: 484871383}
+  bankuReady: {fileID: 26073538}
+  fufuBoiling: {fileID: 1497877190}
+  fufuBoiled: {fileID: 239116079}
+  grill: {fileID: 1334505237}
+  tilapiaGrillFrames:
+  - {fileID: 5432815897345333983, guid: e2de370d749175f41981978ae8212976, type: 3}
+  - {fileID: 2072711995753037211, guid: e2de370d749175f41981978ae8212976, type: 3}
+  - {fileID: -360231998723089959, guid: e2de370d749175f41981978ae8212976, type: 3}
+  - {fileID: -7861523178877805350, guid: e2de370d749175f41981978ae8212976, type: 3}
+  - {fileID: -1870845503592533557, guid: e2de370d749175f41981978ae8212976, type: 3}
+  - {fileID: -1771758185247536927, guid: e2de370d749175f41981978ae8212976, type: 3}
+  tilapiaCooked: {fileID: 1176574521}
+  tilapiaBurned: {fileID: 1107946184}
+  mortar: {fileID: 526413719}
+  fufuPounding: {fileID: 1656562952}
+  fufuPoundingFrames:
+  - {fileID: 2444186479386877251, guid: a482f48d53737fd458ad4f476ed7abdc, type: 3}
+  - {fileID: -1278615536353500184, guid: a482f48d53737fd458ad4f476ed7abdc, type: 3}
+  - {fileID: -9106617868401751070, guid: a482f48d53737fd458ad4f476ed7abdc, type: 3}
+  - {fileID: 5318044577632215493, guid: a482f48d53737fd458ad4f476ed7abdc, type: 3}
+  - {fileID: -7266440304746951675, guid: a482f48d53737fd458ad4f476ed7abdc, type: 3}
+  - {fileID: -7208411092250027891, guid: a482f48d53737fd458ad4f476ed7abdc, type: 3}
+  fufuPounded: {fileID: 1299765455}
+  fufuPoundedSprite: {fileID: -382418295573362295, guid: 89dd4d8d31c93984db10444e9f1f9041, type: 3}
+  soupPan: {fileID: 1560542002}
+  soupCooking: {fileID: 1669168454}
+  soupReady: {fileID: 111352312}
+  soupBurned: {fileID: 541545213}
+  plate1: {fileID: 1558137828}
+  plate2: {fileID: 784211181}
+  bankuOnPlate: {fileID: 183607644}
+  tilapiaOnPlate: {fileID: 1861429534}
+  fufuOnPlate: {fileID: 1607828375}
+  soupOnPlate: {fileID: 772521408}
+  waakyePlateSprite: {fileID: -838777266637680525, guid: 0bbb75642497d0f48804b8a2a15a685e, type: 3}
+  waakyePlateWidth: 0.7
+  burnTime: 10
+  poundingTime: 5
+  frameRate: 6
+--- !u!114 &1900000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864816432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 1
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980147394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 2
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200243883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 3
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811111751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 4
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125675309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 5
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762631389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 6
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453509369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 7
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474643650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 8
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062651527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 9
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281154964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 10
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232430254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 11
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46703019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 12
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606680667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 13
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690797435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 14
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314720127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 15
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239116079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 15
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334505235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 16
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176574520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 16
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299765454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 17
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560542001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 18
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558137828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 19
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183607644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 19
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861429534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 19
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784211181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 20
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607828375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 20
+  manager: {fileID: 1900000002}
+--- !u!114 &1900000028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772521408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c56a5025d2f6365de5ce21f6da98cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 20
+  manager: {fileID: 1900000002}
+--- !u!61 &1900000029
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762631389}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.63, y: 4.06}
+    newSize: {x: 5.63, y: 4.06}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.63, y: 4.06}
+  m_EdgeRadius: 0
 --- !u!1 &1924462665
 GameObject:
   m_ObjectHideFlags: 0
@@ -11578,6 +11845,122 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuManager: {fileID: 1482207242}
   orderCanvas: {fileID: 1719678146}
+--- !u!1 &1950000000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1950000001}
+  - component: {fileID: 1950000002}
+  m_Layer: 0
+  m_Name: IngredientLabels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1950000001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950000000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1950000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950000000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0ce935498fdac33b59a5bfa1733305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entries:
+  - ingredient: {fileID: 1762631389}
+    label: Tilapia
+    placement: 1
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 864816432}
+    label: Rice
+    placement: 1
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 1474643650}
+    label: Cassava
+    placement: 1
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 1281154964}
+    label: Meat
+    placement: 1
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 811111751}
+    label: Corn Dough
+    placement: 1
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 980147394}
+    label: Beans
+    placement: 1
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 1125675309}
+    label: Cassava Dough
+    placement: 0
+    offset: {x: -2.4, y: 0}
+  - ingredient: {fileID: 1200243883}
+    label: Salt
+    placement: 1
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 1453509369}
+    label: Ginger
+    placement: 1
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 232430254}
+    label: Tomato
+    placement: 0
+    offset: {x: 0, y: 0.199}
+  - ingredient: {fileID: 46703019}
+    label: Onion
+    placement: 0
+    offset: {x: 0, y: 0.707}
+  - ingredient: {fileID: 1606680667}
+    label: Pepper
+    placement: 0
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 1837142961}
+    label: Garlic
+    placement: 0
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 1062651527}
+    label: Plantain
+    placement: 0
+    offset: {x: 0, y: 0}
+  - ingredient: {fileID: 585773556}
+    label: Oil
+    placement: 0
+    offset: {x: 0, y: 0.88}
+  font: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  fontSize: 9
+  textColour: {r: 1, g: 0.9490196, b: 0.8509804, a: 1}
+  outlineColour: {r: 0.05, g: 0.04, b: 0.03, a: 1}
+  outlineWidth: 0.18
+  gap: 0.35
+  chipSprite: {fileID: 21300000, guid: 6f7a32845bf03bca5427e47e4ad389ff, type: 3}
+  chipColour: {r: 1, g: 1, b: 1, a: 1}
+  chipPadding: {x: 0.5, y: 0.14}
+  sortingLayer: Default
+  sortingOrder: 6
 --- !u!1 &1956839331
 GameObject:
   m_ObjectHideFlags: 0
@@ -11835,6 +12218,8 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1950000001}
+  - {fileID: 1900000001}
   - {fileID: 538548774}
   - {fileID: 688076855}
   - {fileID: 1686363578}

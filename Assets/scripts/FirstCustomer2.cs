@@ -315,14 +315,17 @@ public class FirstCustomer2 : MonoBehaviour
         }
 
         // =====================================================
-        // CARRY WHAT WAS ACTUALLY SERVED
+        // CARRY THE CUSTOMER'S ORDER
         //
-        // Egusi and Pounded Yam are served straight from their cooking
-        // managers, whatever the menu order was (or with no order at all),
-        // and their state flips to Served in this same frame. Jollof only
-        // reaches this method through ServePlate1(), which already requires
-        // selectedFood == 0, so it needs no override.
+        // The carried dish is the customer's ACTUAL order. The dish
+        // detected as served this frame is only a fallback when no order
+        // is known. Egusi and Pounded Yam are served straight from their
+        // cooking managers and flip their state to Served in this same
+        // frame. Jollof only reaches this method through ServePlate1(),
+        // which already requires selectedFood == 0.
         // =====================================================
+
+        int servedFood = -1;
 
         if (
             egusiCookingManager != null &&
@@ -332,7 +335,7 @@ public class FirstCustomer2 : MonoBehaviour
                 EgusiCookingManager.CookState.Served
         )
         {
-            selectedFood = 1;
+            servedFood = 1;
         }
         else if (
             poundedYamCookingManager != null &&
@@ -342,59 +345,63 @@ public class FirstCustomer2 : MonoBehaviour
                 PoundedYamCookingManager.PoundedYamState.Served
         )
         {
-            selectedFood = 2;
+            servedFood = 2;
         }
+
+        if (
+            selectedFood >= 0 &&
+            servedFood >= 0 &&
+            servedFood != selectedFood
+        )
+        {
+            Debug.LogWarning(
+                $"⚠️ {name}: served food {servedFood} does not match order {selectedFood} — carrying the ORDER."
+            );
+        }
+
+        if (selectedFood < 0)
+            selectedFood = servedFood;
 
         // =====================================================
         // SET CARRYING FOOD
+        //
+        // 1 = Jollof plate, 2 = Egusi pot, 3 = Pounded Yam plate.
+        // 0 = no known food: the customer leaves WITHOUT a carry
+        // animation, never with the generic walk-with-food art.
         // =====================================================
 
-        if (selectedFood == 0)
-        {
-            // JOLLOF
-            animator.SetInteger(
-                "carryingFood",
-                1
-            );
+        int carryingFood =
+            selectedFood == 0 ? 1 :
+            selectedFood == 1 ? 2 :
+            selectedFood == 2 ? 3 : 0;
 
+        animator.SetInteger(
+            "carryingFood",
+            carryingFood
+        );
+
+        if (carryingFood == 1)
+        {
             Debug.Log(
-                $"🍛 {name} → carryingFood = 1 (Jollof)"
+                $"🍛 {name} → carryingFood = 1 (Jollof plate)"
             );
         }
-        else if (selectedFood == 1)
+        else if (carryingFood == 2)
         {
-            // EGUSI
-            animator.SetInteger(
-                "carryingFood",
-                2
-            );
-
             Debug.Log(
-                $"🍲 {name} → carryingFood = 2 (Egusi)"
+                $"🍲 {name} → carryingFood = 2 (Egusi pot)"
             );
         }
-        else if (selectedFood == 2)
+        else if (carryingFood == 3)
         {
-            // POUNDED YAM
-            animator.SetInteger(
-                "carryingFood",
-                3
-            );
-
             Debug.Log(
-                $"🥣 {name} → carryingFood = 3 (Pounded Yam)"
+                $"🥣 {name} → carryingFood = 3 (Pounded Yam plate)"
             );
         }
         else
         {
-            // NO VALID FOOD
-            animator.SetInteger(
-                "carryingFood",
-                0
-            );
-
             Debug.LogWarning(
-                $"⚠️ {name} → No valid food selected."
+                $"⚠️ {name} → No valid food. Leaving without carrying food."
             );
         }
 
@@ -470,6 +477,15 @@ public class FirstCustomer2 : MonoBehaviour
         yield return new WaitForSeconds(
             1.5f
         );
+
+        // No known food: never enter the generic walk-with-food state.
+        if (
+            animator != null &&
+            animator.GetInteger("carryingFood") == 0
+        )
+        {
+            yield break;
+        }
 
         if (animator != null)
         {
